@@ -1,0 +1,623 @@
+2022-05-07 18:08:31.945 o.a.s.v.ConfigValidation main [INFO] Will use [class org.apache.storm.DaemonConfig, class org.apache.storm.Config] for validation
+2022-05-07 18:08:32.115 o.a.s.s.o.a.z.ZooKeeper main [INFO] Client environment:zookeeper.version=3.5.9-83df9301aa5c2a5d284a9940177808c01bc35cef, built on 01/06/2021 20:03 GMT
+2022-05-07 18:08:32.115 o.a.s.s.o.a.z.ZooKeeper main [INFO] Client environment:host.name=mclovin-MS-7B23
+2022-05-07 18:08:32.115 o.a.s.s.o.a.z.ZooKeeper main [INFO] Client environment:java.version=11.0.15
+2022-05-07 18:08:32.115 o.a.s.s.o.a.z.ZooKeeper main [INFO] Client environment:java.vendor=Private Build
+2022-05-07 18:08:32.116 o.a.s.s.o.a.z.ZooKeeper main [INFO] Client environment:java.home=/usr/lib/jvm/java-11-openjdk-amd64
+2022-05-07 18:08:32.116 o.a.s.s.o.a.z.ZooKeeper main [INFO] Client environment:java.class.path=/home/mclovin/bigdata/apache-storm-2.4.0/*:/home/mclovin/bigdata/apache-storm-2.4.0/lib/commons-exec-1.3.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/metrics-core-3.2.6.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/curator-framework-4.3.0.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/jetty-continuation-9.4.14.v20181114.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/netty-transport-native-epoll-4.1.30.Final.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/httpclient-4.5.6.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/commons-collections-3.2.2.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/rocksdbjni-5.18.4.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/checker-qual-2.5.2.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/jetty-servlets-9.4.14.v20181114.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/log4j-core-2.17.1.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/netty-resolver-4.1.30.Final.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/jetty-util-9.4.14.v20181114.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/hadoop-auth-2.8.5.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/core.specs.alpha-0.2.44.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/error_prone_annotations-2.2.0.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/json-simple-1.1.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/commons-fileupload-1.3.3.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/javax.servlet-api-3.1.0.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/httpcore-4.4.10.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/netty-transport-4.1.30.Final.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/jetty-security-9.4.14.v20181114.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/audience-annotations-0.5.0.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/jakarta.xml.bind-api-2.3.2.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/storm-client-2.4.0.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/jakarta.activation-api-1.2.1.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/jakarta.activation-1.2.1.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/jcip-annotations-1.0-1.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/snakeyaml-1.26.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/jackson-dataformat-smile-2.10.0.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/asm-5.0.3.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/log4j-api-2.17.1.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/metrics-graphite-3.2.6.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/jackson-core-2.10.0.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/storm-shaded-deps-2.4.0.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/guava-27.0.1-jre.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/commons-logging-1.2.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/jetty-io-9.4.14.v20181114.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/jackson-annotations-2.10.0.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/metrics-jvm-3.2.6.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/jetty-servlet-9.4.14.v20181114.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/animal-sniffer-annotations-1.17.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/storm-core-2.4.0.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/commons-compress-1.18.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/log4j-slf4j-impl-2.17.1.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/jackson-databind-2.10.0.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/reflectasm-1.10.1.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/netty-common-4.1.30.Final.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/tools.logging-0.2.3.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/jetty-server-9.4.14.v20181114.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/joda-time-2.3.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/javax.annotation-api-1.3.2.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/carbonite-1.5.0.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/kryo-3.0.3.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/netty-buffer-4.1.30.Final.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/chill-java-0.8.0.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/commons-cli-1.4.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/netty-codec-4.1.30.Final.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/jetty-http-9.4.14.v20181114.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/kryo-shaded-3.0.3.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/netty-transport-native-unix-common-4.1.30.Final.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/jsr305-3.0.2.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/storm-server-2.4.0.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/log4j-over-slf4j-1.7.36.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/clojure-1.10.0.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/objenesis-2.1.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/accessors-smart-1.2.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/zookeeper-jute-3.5.9.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/nimbus-jose-jwt-4.41.1.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/commons-io-2.6.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/minlog-1.3.0.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/zookeeper-3.5.9.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/commons-lang-2.6.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/spec.alpha-0.2.176.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/curator-client-4.3.0.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/storm-clojure-2.4.0.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/slf4j-api-1.7.36.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/commons-codec-1.11.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/netty-handler-4.1.30.Final.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/json-smart-2.3.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/jline-0.9.94.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/j2objc-annotations-1.1.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/failureaccess-1.0.1.jar:/home/mclovin/bigdata/apache-storm-2.4.0/extlib/*:/home/mclovin/bigdata/apache-storm-2.4.0/extlib-daemon/*:/home/mclovin/bigdata/apache-storm-2.4.0/conf
+2022-05-07 18:08:32.116 o.a.s.s.o.a.z.ZooKeeper main [INFO] Client environment:java.library.path=/usr/local/lib:/opt/local/lib:/usr/lib:/usr/lib64
+2022-05-07 18:08:32.116 o.a.s.s.o.a.z.ZooKeeper main [INFO] Client environment:java.io.tmpdir=/tmp
+2022-05-07 18:08:32.116 o.a.s.s.o.a.z.ZooKeeper main [INFO] Client environment:java.compiler=<NA>
+2022-05-07 18:08:32.116 o.a.s.s.o.a.z.ZooKeeper main [INFO] Client environment:os.name=Linux
+2022-05-07 18:08:32.116 o.a.s.s.o.a.z.ZooKeeper main [INFO] Client environment:os.arch=amd64
+2022-05-07 18:08:32.117 o.a.s.s.o.a.z.ZooKeeper main [INFO] Client environment:os.version=5.13.0-39-generic
+2022-05-07 18:08:32.117 o.a.s.s.o.a.z.ZooKeeper main [INFO] Client environment:user.name=mclovin
+2022-05-07 18:08:32.117 o.a.s.s.o.a.z.ZooKeeper main [INFO] Client environment:user.home=/home/mclovin
+2022-05-07 18:08:32.117 o.a.s.s.o.a.z.ZooKeeper main [INFO] Client environment:user.dir=/home/mclovin/bigdata/apache-storm-2.4.0
+2022-05-07 18:08:32.117 o.a.s.s.o.a.z.ZooKeeper main [INFO] Client environment:os.memory.free=213MB
+2022-05-07 18:08:32.117 o.a.s.s.o.a.z.ZooKeeper main [INFO] Client environment:os.memory.max=256MB
+2022-05-07 18:08:32.117 o.a.s.s.o.a.z.ZooKeeper main [INFO] Client environment:os.memory.total=252MB
+2022-05-07 18:08:32.118 o.a.s.s.o.a.c.u.Compatibility main [INFO] Using emulated InjectSessionExpiration
+2022-05-07 18:08:32.144 o.a.s.z.ClientZookeeper main [INFO] Starting ZK Curator
+2022-05-07 18:08:32.144 o.a.s.s.o.a.c.f.i.CuratorFrameworkImpl main [INFO] Starting
+2022-05-07 18:08:32.147 o.a.s.s.o.a.z.ZooKeeper main [INFO] Initiating client connection, connectString=localhost:2181 sessionTimeout=20000 watcher=org.apache.storm.shade.org.apache.curator.ConnectionState@5b989dc7
+2022-05-07 18:08:32.151 o.a.s.s.o.a.z.c.X509Util main [INFO] Setting -D jdk.tls.rejectClientInitiatedRenegotiation=true to disable client-initiated TLS renegotiation
+2022-05-07 18:08:32.155 o.a.s.s.o.a.z.ClientCnxnSocket main [INFO] jute.maxbuffer value is 4194304 Bytes
+2022-05-07 18:08:32.160 o.a.s.s.o.a.z.ClientCnxn main [INFO] zookeeper.request.timeout value is 0. feature enabled=
+2022-05-07 18:08:32.167 o.a.s.s.o.a.z.ClientCnxn main-SendThread(localhost:2181) [INFO] Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2022-05-07 18:08:32.168 o.a.s.s.o.a.c.f.i.CuratorFrameworkImpl main [INFO] Default schema
+2022-05-07 18:08:32.173 o.a.s.s.o.a.z.ClientCnxn main-SendThread(localhost:2181) [INFO] Socket error occurred: localhost/127.0.0.1:2181: Connection refused
+2022-05-07 18:08:33.275 o.a.s.s.o.a.z.ClientCnxn main-SendThread(localhost:2181) [INFO] Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2022-05-07 18:08:33.276 o.a.s.s.o.a.z.ClientCnxn main-SendThread(localhost:2181) [INFO] Socket error occurred: localhost/127.0.0.1:2181: Connection refused
+2022-05-07 18:08:34.378 o.a.s.s.o.a.z.ClientCnxn main-SendThread(localhost:2181) [INFO] Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2022-05-07 18:08:34.379 o.a.s.s.o.a.z.ClientCnxn main-SendThread(localhost:2181) [INFO] Socket error occurred: localhost/127.0.0.1:2181: Connection refused
+2022-05-07 18:08:35.481 o.a.s.s.o.a.z.ClientCnxn main-SendThread(localhost:2181) [INFO] Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2022-05-07 18:08:35.482 o.a.s.s.o.a.z.ClientCnxn main-SendThread(localhost:2181) [INFO] Socket error occurred: localhost/127.0.0.1:2181: Connection refused
+2022-05-07 18:08:36.584 o.a.s.s.o.a.z.ClientCnxn main-SendThread(localhost:2181) [INFO] Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2022-05-07 18:08:36.585 o.a.s.s.o.a.z.ClientCnxn main-SendThread(localhost:2181) [INFO] Socket error occurred: localhost/127.0.0.1:2181: Connection refused
+2022-05-07 18:08:37.687 o.a.s.s.o.a.z.ClientCnxn main-SendThread(localhost:2181) [INFO] Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2022-05-07 18:08:37.689 o.a.s.s.o.a.z.ClientCnxn main-SendThread(localhost:2181) [INFO] Socket error occurred: localhost/127.0.0.1:2181: Connection refused
+2022-05-07 18:08:38.790 o.a.s.s.o.a.z.ClientCnxn main-SendThread(localhost:2181) [INFO] Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2022-05-07 18:08:38.792 o.a.s.s.o.a.z.ClientCnxn main-SendThread(localhost:2181) [INFO] Socket error occurred: localhost/127.0.0.1:2181: Connection refused
+2022-05-07 18:08:39.893 o.a.s.s.o.a.z.ClientCnxn main-SendThread(localhost:2181) [INFO] Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2022-05-07 18:08:39.895 o.a.s.s.o.a.z.ClientCnxn main-SendThread(localhost:2181) [INFO] Socket error occurred: localhost/127.0.0.1:2181: Connection refused
+2022-05-07 18:08:40.996 o.a.s.s.o.a.z.ClientCnxn main-SendThread(localhost:2181) [INFO] Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2022-05-07 18:08:40.998 o.a.s.s.o.a.z.ClientCnxn main-SendThread(localhost:2181) [INFO] Socket error occurred: localhost/127.0.0.1:2181: Connection refused
+2022-05-07 18:08:42.099 o.a.s.s.o.a.z.ClientCnxn main-SendThread(localhost:2181) [INFO] Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2022-05-07 18:08:42.101 o.a.s.s.o.a.z.ClientCnxn main-SendThread(localhost:2181) [INFO] Socket error occurred: localhost/127.0.0.1:2181: Connection refused
+2022-05-07 18:08:43.203 o.a.s.s.o.a.z.ClientCnxn main-SendThread(localhost:2181) [INFO] Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2022-05-07 18:08:43.204 o.a.s.s.o.a.z.ClientCnxn main-SendThread(localhost:2181) [INFO] Socket error occurred: localhost/127.0.0.1:2181: Connection refused
+2022-05-07 18:08:44.306 o.a.s.s.o.a.z.ClientCnxn main-SendThread(localhost:2181) [INFO] Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2022-05-07 18:08:44.307 o.a.s.s.o.a.z.ClientCnxn main-SendThread(localhost:2181) [INFO] Socket error occurred: localhost/127.0.0.1:2181: Connection refused
+2022-05-07 18:08:45.409 o.a.s.s.o.a.z.ClientCnxn main-SendThread(localhost:2181) [INFO] Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2022-05-07 18:08:45.410 o.a.s.s.o.a.z.ClientCnxn main-SendThread(localhost:2181) [INFO] Socket error occurred: localhost/127.0.0.1:2181: Connection refused
+2022-05-07 18:08:46.512 o.a.s.s.o.a.z.ClientCnxn main-SendThread(localhost:2181) [INFO] Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2022-05-07 18:08:46.513 o.a.s.s.o.a.z.ClientCnxn main-SendThread(localhost:2181) [INFO] Socket error occurred: localhost/127.0.0.1:2181: Connection refused
+2022-05-07 18:08:47.614 o.a.s.s.o.a.z.ClientCnxn main-SendThread(localhost:2181) [INFO] Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2022-05-07 18:08:47.615 o.a.s.s.o.a.z.ClientCnxn main-SendThread(localhost:2181) [INFO] Socket error occurred: localhost/127.0.0.1:2181: Connection refused
+2022-05-07 18:08:48.716 o.a.s.s.o.a.z.ClientCnxn main-SendThread(localhost:2181) [INFO] Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2022-05-07 18:08:48.717 o.a.s.s.o.a.z.ClientCnxn main-SendThread(localhost:2181) [INFO] Socket error occurred: localhost/127.0.0.1:2181: Connection refused
+2022-05-07 18:08:49.817 o.a.s.s.o.a.z.ClientCnxn main-SendThread(localhost:2181) [INFO] Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2022-05-07 18:08:49.818 o.a.s.s.o.a.z.ClientCnxn main-SendThread(localhost:2181) [INFO] Socket error occurred: localhost/127.0.0.1:2181: Connection refused
+2022-05-07 18:08:50.918 o.a.s.s.o.a.z.ClientCnxn main-SendThread(localhost:2181) [INFO] Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2022-05-07 18:08:50.919 o.a.s.s.o.a.z.ClientCnxn main-SendThread(localhost:2181) [INFO] Socket error occurred: localhost/127.0.0.1:2181: Connection refused
+2022-05-07 18:08:52.020 o.a.s.s.o.a.z.ClientCnxn main-SendThread(localhost:2181) [INFO] Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2022-05-07 18:08:52.021 o.a.s.s.o.a.z.ClientCnxn main-SendThread(localhost:2181) [INFO] Socket error occurred: localhost/127.0.0.1:2181: Connection refused
+2022-05-07 18:08:52.224 o.a.s.s.o.a.c.f.s.ConnectionStateManager Curator-Framework-0 [INFO] State change: SUSPENDED
+2022-05-07 18:08:52.225 o.a.s.s.o.a.c.f.i.CuratorFrameworkImpl Curator-Framework-0 [ERROR] Background operation retry gave up
+org.apache.storm.shade.org.apache.zookeeper.KeeperException$ConnectionLossException: KeeperErrorCode = ConnectionLoss
+	at org.apache.storm.shade.org.apache.zookeeper.KeeperException.create(KeeperException.java:102) ~[storm-shaded-deps-2.4.0.jar:2.4.0]
+	at org.apache.storm.shade.org.apache.curator.framework.imps.CuratorFrameworkImpl.checkBackgroundRetry(CuratorFrameworkImpl.java:862) [storm-shaded-deps-2.4.0.jar:2.4.0]
+	at org.apache.storm.shade.org.apache.curator.framework.imps.CuratorFrameworkImpl.performBackgroundOperation(CuratorFrameworkImpl.java:990) [storm-shaded-deps-2.4.0.jar:2.4.0]
+	at org.apache.storm.shade.org.apache.curator.framework.imps.CuratorFrameworkImpl.backgroundOperationsLoop(CuratorFrameworkImpl.java:943) [storm-shaded-deps-2.4.0.jar:2.4.0]
+	at org.apache.storm.shade.org.apache.curator.framework.imps.CuratorFrameworkImpl.access$300(CuratorFrameworkImpl.java:66) [storm-shaded-deps-2.4.0.jar:2.4.0]
+	at org.apache.storm.shade.org.apache.curator.framework.imps.CuratorFrameworkImpl$4.call(CuratorFrameworkImpl.java:346) [storm-shaded-deps-2.4.0.jar:2.4.0]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+2022-05-07 18:08:52.257 o.a.s.s.o.a.c.f.i.CuratorFrameworkImpl Curator-Framework-0 [ERROR] Background retry gave up
+org.apache.storm.shade.org.apache.curator.CuratorConnectionLossException: KeeperErrorCode = ConnectionLoss
+	at org.apache.storm.shade.org.apache.curator.framework.imps.CuratorFrameworkImpl.performBackgroundOperation(CuratorFrameworkImpl.java:972) [storm-shaded-deps-2.4.0.jar:2.4.0]
+	at org.apache.storm.shade.org.apache.curator.framework.imps.CuratorFrameworkImpl.backgroundOperationsLoop(CuratorFrameworkImpl.java:943) [storm-shaded-deps-2.4.0.jar:2.4.0]
+	at org.apache.storm.shade.org.apache.curator.framework.imps.CuratorFrameworkImpl.access$300(CuratorFrameworkImpl.java:66) [storm-shaded-deps-2.4.0.jar:2.4.0]
+	at org.apache.storm.shade.org.apache.curator.framework.imps.CuratorFrameworkImpl$4.call(CuratorFrameworkImpl.java:346) [storm-shaded-deps-2.4.0.jar:2.4.0]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+2022-05-07 18:08:53.123 o.a.s.s.o.a.z.ClientCnxn main-SendThread(localhost:2181) [INFO] Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2022-05-07 18:08:53.124 o.a.s.s.o.a.z.ClientCnxn main-SendThread(localhost:2181) [INFO] Socket error occurred: localhost/127.0.0.1:2181: Connection refused
+2022-05-07 18:08:53.225 o.a.s.d.s.Supervisor main [ERROR] supervisor can't create stormClusterState
+2022-05-07 18:08:53.226 o.a.s.u.Utils main [ERROR] Received error in thread main.. terminating server...
+java.lang.Error: java.lang.RuntimeException: org.apache.storm.shade.org.apache.zookeeper.KeeperException$ConnectionLossException: KeeperErrorCode = ConnectionLoss for /storm
+	at org.apache.storm.utils.Utils.handleUncaughtException(Utils.java:663) ~[storm-client-2.4.0.jar:2.4.0]
+	at org.apache.storm.utils.Utils.handleUncaughtException(Utils.java:667) ~[storm-client-2.4.0.jar:2.4.0]
+	at org.apache.storm.utils.Utils.lambda$createDefaultUncaughtExceptionHandler$2(Utils.java:1047) ~[storm-client-2.4.0.jar:2.4.0]
+	at java.lang.ThreadGroup.uncaughtException(ThreadGroup.java:1055) [?:?]
+	at java.lang.ThreadGroup.uncaughtException(ThreadGroup.java:1050) [?:?]
+	at java.lang.Thread.dispatchUncaughtException(Thread.java:1997) [?:?]
+Caused by: java.lang.RuntimeException: org.apache.storm.shade.org.apache.zookeeper.KeeperException$ConnectionLossException: KeeperErrorCode = ConnectionLoss for /storm
+	at org.apache.storm.utils.Utils.wrapInRuntime(Utils.java:493) ~[storm-client-2.4.0.jar:2.4.0]
+	at org.apache.storm.zookeeper.ClientZookeeper.existsNode(ClientZookeeper.java:147) ~[storm-client-2.4.0.jar:2.4.0]
+	at org.apache.storm.zookeeper.ClientZookeeper.mkdirsImpl(ClientZookeeper.java:288) ~[storm-client-2.4.0.jar:2.4.0]
+	at org.apache.storm.zookeeper.ClientZookeeper.mkdirs(ClientZookeeper.java:70) ~[storm-client-2.4.0.jar:2.4.0]
+	at org.apache.storm.cluster.ZKStateStorage.<init>(ZKStateStorage.java:65) ~[storm-client-2.4.0.jar:2.4.0]
+	at org.apache.storm.cluster.ZKStateStorageFactory.mkStore(ZKStateStorageFactory.java:30) ~[storm-client-2.4.0.jar:2.4.0]
+	at org.apache.storm.cluster.ClusterUtils.mkStateStorageImpl(ClusterUtils.java:318) ~[storm-client-2.4.0.jar:2.4.0]
+	at org.apache.storm.cluster.ClusterUtils.mkStormClusterStateImpl(ClusterUtils.java:301) ~[storm-client-2.4.0.jar:2.4.0]
+	at org.apache.storm.cluster.ClusterUtils.mkStormClusterState(ClusterUtils.java:286) ~[storm-client-2.4.0.jar:2.4.0]
+	at org.apache.storm.daemon.supervisor.Supervisor.<init>(Supervisor.java:160) ~[storm-server-2.4.0.jar:2.4.0]
+	at org.apache.storm.daemon.supervisor.Supervisor.<init>(Supervisor.java:127) ~[storm-server-2.4.0.jar:2.4.0]
+	at org.apache.storm.daemon.supervisor.Supervisor.main(Supervisor.java:200) ~[storm-server-2.4.0.jar:2.4.0]
+Caused by: org.apache.storm.shade.org.apache.zookeeper.KeeperException$ConnectionLossException: KeeperErrorCode = ConnectionLoss for /storm
+	at org.apache.storm.shade.org.apache.zookeeper.KeeperException.create(KeeperException.java:102) ~[storm-shaded-deps-2.4.0.jar:2.4.0]
+	at org.apache.storm.shade.org.apache.zookeeper.KeeperException.create(KeeperException.java:54) ~[storm-shaded-deps-2.4.0.jar:2.4.0]
+	at org.apache.storm.shade.org.apache.zookeeper.ZooKeeper.exists(ZooKeeper.java:2021) ~[storm-shaded-deps-2.4.0.jar:2.4.0]
+	at org.apache.storm.shade.org.apache.curator.framework.imps.ExistsBuilderImpl$3.call(ExistsBuilderImpl.java:268) ~[storm-shaded-deps-2.4.0.jar:2.4.0]
+	at org.apache.storm.shade.org.apache.curator.framework.imps.ExistsBuilderImpl$3.call(ExistsBuilderImpl.java:257) ~[storm-shaded-deps-2.4.0.jar:2.4.0]
+	at org.apache.storm.shade.org.apache.curator.connection.StandardConnectionHandlingPolicy.callWithRetry(StandardConnectionHandlingPolicy.java:67) ~[storm-shaded-deps-2.4.0.jar:2.4.0]
+	at org.apache.storm.shade.org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:81) ~[storm-shaded-deps-2.4.0.jar:2.4.0]
+	at org.apache.storm.shade.org.apache.curator.framework.imps.ExistsBuilderImpl.pathInForegroundStandard(ExistsBuilderImpl.java:254) ~[storm-shaded-deps-2.4.0.jar:2.4.0]
+	at org.apache.storm.shade.org.apache.curator.framework.imps.ExistsBuilderImpl.pathInForeground(ExistsBuilderImpl.java:247) ~[storm-shaded-deps-2.4.0.jar:2.4.0]
+	at org.apache.storm.shade.org.apache.curator.framework.imps.ExistsBuilderImpl.forPath(ExistsBuilderImpl.java:206) ~[storm-shaded-deps-2.4.0.jar:2.4.0]
+	at org.apache.storm.shade.org.apache.curator.framework.imps.ExistsBuilderImpl.forPath(ExistsBuilderImpl.java:35) ~[storm-shaded-deps-2.4.0.jar:2.4.0]
+	at org.apache.storm.zookeeper.ClientZookeeper.existsNode(ClientZookeeper.java:144) ~[storm-client-2.4.0.jar:2.4.0]
+	at org.apache.storm.zookeeper.ClientZookeeper.mkdirsImpl(ClientZookeeper.java:288) ~[storm-client-2.4.0.jar:2.4.0]
+	at org.apache.storm.zookeeper.ClientZookeeper.mkdirs(ClientZookeeper.java:70) ~[storm-client-2.4.0.jar:2.4.0]
+	at org.apache.storm.cluster.ZKStateStorage.<init>(ZKStateStorage.java:65) ~[storm-client-2.4.0.jar:2.4.0]
+	at org.apache.storm.cluster.ZKStateStorageFactory.mkStore(ZKStateStorageFactory.java:30) ~[storm-client-2.4.0.jar:2.4.0]
+	at org.apache.storm.cluster.ClusterUtils.mkStateStorageImpl(ClusterUtils.java:318) ~[storm-client-2.4.0.jar:2.4.0]
+	at org.apache.storm.cluster.ClusterUtils.mkStormClusterStateImpl(ClusterUtils.java:301) ~[storm-client-2.4.0.jar:2.4.0]
+	at org.apache.storm.cluster.ClusterUtils.mkStormClusterState(ClusterUtils.java:286) ~[storm-client-2.4.0.jar:2.4.0]
+	at org.apache.storm.daemon.supervisor.Supervisor.<init>(Supervisor.java:160) ~[storm-server-2.4.0.jar:2.4.0]
+	at org.apache.storm.daemon.supervisor.Supervisor.<init>(Supervisor.java:127) ~[storm-server-2.4.0.jar:2.4.0]
+	at org.apache.storm.daemon.supervisor.Supervisor.main(Supervisor.java:200) ~[storm-server-2.4.0.jar:2.4.0]
+2022-05-07 18:10:07.777 o.a.s.v.ConfigValidation main [INFO] Will use [class org.apache.storm.DaemonConfig, class org.apache.storm.Config] for validation
+2022-05-07 18:10:07.941 o.a.s.s.o.a.z.ZooKeeper main [INFO] Client environment:zookeeper.version=3.5.9-83df9301aa5c2a5d284a9940177808c01bc35cef, built on 01/06/2021 20:03 GMT
+2022-05-07 18:10:07.941 o.a.s.s.o.a.z.ZooKeeper main [INFO] Client environment:host.name=mclovin-MS-7B23
+2022-05-07 18:10:07.941 o.a.s.s.o.a.z.ZooKeeper main [INFO] Client environment:java.version=11.0.15
+2022-05-07 18:10:07.942 o.a.s.s.o.a.z.ZooKeeper main [INFO] Client environment:java.vendor=Private Build
+2022-05-07 18:10:07.942 o.a.s.s.o.a.z.ZooKeeper main [INFO] Client environment:java.home=/usr/lib/jvm/java-11-openjdk-amd64
+2022-05-07 18:10:07.942 o.a.s.s.o.a.z.ZooKeeper main [INFO] Client environment:java.class.path=/home/mclovin/bigdata/apache-storm-2.4.0/*:/home/mclovin/bigdata/apache-storm-2.4.0/lib/commons-exec-1.3.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/metrics-core-3.2.6.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/curator-framework-4.3.0.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/jetty-continuation-9.4.14.v20181114.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/netty-transport-native-epoll-4.1.30.Final.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/httpclient-4.5.6.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/commons-collections-3.2.2.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/rocksdbjni-5.18.4.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/checker-qual-2.5.2.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/jetty-servlets-9.4.14.v20181114.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/log4j-core-2.17.1.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/netty-resolver-4.1.30.Final.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/jetty-util-9.4.14.v20181114.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/hadoop-auth-2.8.5.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/core.specs.alpha-0.2.44.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/error_prone_annotations-2.2.0.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/json-simple-1.1.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/commons-fileupload-1.3.3.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/javax.servlet-api-3.1.0.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/httpcore-4.4.10.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/netty-transport-4.1.30.Final.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/jetty-security-9.4.14.v20181114.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/audience-annotations-0.5.0.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/jakarta.xml.bind-api-2.3.2.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/storm-client-2.4.0.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/jakarta.activation-api-1.2.1.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/jakarta.activation-1.2.1.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/jcip-annotations-1.0-1.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/snakeyaml-1.26.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/jackson-dataformat-smile-2.10.0.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/asm-5.0.3.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/log4j-api-2.17.1.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/metrics-graphite-3.2.6.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/jackson-core-2.10.0.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/storm-shaded-deps-2.4.0.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/guava-27.0.1-jre.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/commons-logging-1.2.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/jetty-io-9.4.14.v20181114.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/jackson-annotations-2.10.0.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/metrics-jvm-3.2.6.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/jetty-servlet-9.4.14.v20181114.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/animal-sniffer-annotations-1.17.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/storm-core-2.4.0.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/commons-compress-1.18.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/log4j-slf4j-impl-2.17.1.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/jackson-databind-2.10.0.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/reflectasm-1.10.1.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/netty-common-4.1.30.Final.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/tools.logging-0.2.3.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/jetty-server-9.4.14.v20181114.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/joda-time-2.3.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/javax.annotation-api-1.3.2.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/carbonite-1.5.0.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/kryo-3.0.3.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/netty-buffer-4.1.30.Final.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/chill-java-0.8.0.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/commons-cli-1.4.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/netty-codec-4.1.30.Final.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/jetty-http-9.4.14.v20181114.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/kryo-shaded-3.0.3.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/netty-transport-native-unix-common-4.1.30.Final.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/jsr305-3.0.2.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/storm-server-2.4.0.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/log4j-over-slf4j-1.7.36.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/clojure-1.10.0.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/objenesis-2.1.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/accessors-smart-1.2.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/zookeeper-jute-3.5.9.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/nimbus-jose-jwt-4.41.1.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/commons-io-2.6.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/minlog-1.3.0.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/zookeeper-3.5.9.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/commons-lang-2.6.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/spec.alpha-0.2.176.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/curator-client-4.3.0.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/storm-clojure-2.4.0.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/slf4j-api-1.7.36.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/commons-codec-1.11.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/netty-handler-4.1.30.Final.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/json-smart-2.3.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/jline-0.9.94.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/j2objc-annotations-1.1.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/failureaccess-1.0.1.jar:/home/mclovin/bigdata/apache-storm-2.4.0/extlib/*:/home/mclovin/bigdata/apache-storm-2.4.0/extlib-daemon/*:/home/mclovin/bigdata/apache-storm-2.4.0/conf
+2022-05-07 18:10:07.942 o.a.s.s.o.a.z.ZooKeeper main [INFO] Client environment:java.library.path=/usr/local/lib:/opt/local/lib:/usr/lib:/usr/lib64
+2022-05-07 18:10:07.942 o.a.s.s.o.a.z.ZooKeeper main [INFO] Client environment:java.io.tmpdir=/tmp
+2022-05-07 18:10:07.942 o.a.s.s.o.a.z.ZooKeeper main [INFO] Client environment:java.compiler=<NA>
+2022-05-07 18:10:07.943 o.a.s.s.o.a.z.ZooKeeper main [INFO] Client environment:os.name=Linux
+2022-05-07 18:10:07.943 o.a.s.s.o.a.z.ZooKeeper main [INFO] Client environment:os.arch=amd64
+2022-05-07 18:10:07.943 o.a.s.s.o.a.z.ZooKeeper main [INFO] Client environment:os.version=5.13.0-39-generic
+2022-05-07 18:10:07.943 o.a.s.s.o.a.z.ZooKeeper main [INFO] Client environment:user.name=mclovin
+2022-05-07 18:10:07.943 o.a.s.s.o.a.z.ZooKeeper main [INFO] Client environment:user.home=/home/mclovin
+2022-05-07 18:10:07.943 o.a.s.s.o.a.z.ZooKeeper main [INFO] Client environment:user.dir=/home/mclovin/bigdata/apache-storm-2.4.0
+2022-05-07 18:10:07.943 o.a.s.s.o.a.z.ZooKeeper main [INFO] Client environment:os.memory.free=212MB
+2022-05-07 18:10:07.943 o.a.s.s.o.a.z.ZooKeeper main [INFO] Client environment:os.memory.max=256MB
+2022-05-07 18:10:07.943 o.a.s.s.o.a.z.ZooKeeper main [INFO] Client environment:os.memory.total=252MB
+2022-05-07 18:10:07.944 o.a.s.s.o.a.c.u.Compatibility main [INFO] Using emulated InjectSessionExpiration
+2022-05-07 18:10:07.970 o.a.s.z.ClientZookeeper main [INFO] Starting ZK Curator
+2022-05-07 18:10:07.970 o.a.s.s.o.a.c.f.i.CuratorFrameworkImpl main [INFO] Starting
+2022-05-07 18:10:07.973 o.a.s.s.o.a.z.ZooKeeper main [INFO] Initiating client connection, connectString=localhost:2181 sessionTimeout=20000 watcher=org.apache.storm.shade.org.apache.curator.ConnectionState@53bf7094
+2022-05-07 18:10:07.976 o.a.s.s.o.a.z.c.X509Util main [INFO] Setting -D jdk.tls.rejectClientInitiatedRenegotiation=true to disable client-initiated TLS renegotiation
+2022-05-07 18:10:07.980 o.a.s.s.o.a.z.ClientCnxnSocket main [INFO] jute.maxbuffer value is 4194304 Bytes
+2022-05-07 18:10:07.986 o.a.s.s.o.a.z.ClientCnxn main [INFO] zookeeper.request.timeout value is 0. feature enabled=
+2022-05-07 18:10:07.993 o.a.s.s.o.a.z.ClientCnxn main-SendThread(localhost:2181) [INFO] Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2022-05-07 18:10:07.993 o.a.s.s.o.a.c.f.i.CuratorFrameworkImpl main [INFO] Default schema
+2022-05-07 18:10:07.998 o.a.s.s.o.a.z.ClientCnxn main-SendThread(localhost:2181) [INFO] Socket error occurred: localhost/127.0.0.1:2181: Connection refused
+2022-05-07 18:10:09.100 o.a.s.s.o.a.z.ClientCnxn main-SendThread(localhost:2181) [INFO] Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2022-05-07 18:10:09.102 o.a.s.s.o.a.z.ClientCnxn main-SendThread(localhost:2181) [INFO] Socket error occurred: localhost/127.0.0.1:2181: Connection refused
+2022-05-07 18:10:10.203 o.a.s.s.o.a.z.ClientCnxn main-SendThread(localhost:2181) [INFO] Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2022-05-07 18:10:10.205 o.a.s.s.o.a.z.ClientCnxn main-SendThread(localhost:2181) [INFO] Socket error occurred: localhost/127.0.0.1:2181: Connection refused
+2022-05-07 18:10:11.306 o.a.s.s.o.a.z.ClientCnxn main-SendThread(localhost:2181) [INFO] Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2022-05-07 18:10:11.308 o.a.s.s.o.a.z.ClientCnxn main-SendThread(localhost:2181) [INFO] Socket error occurred: localhost/127.0.0.1:2181: Connection refused
+2022-05-07 18:10:12.409 o.a.s.s.o.a.z.ClientCnxn main-SendThread(localhost:2181) [INFO] Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2022-05-07 18:10:12.410 o.a.s.s.o.a.z.ClientCnxn main-SendThread(localhost:2181) [INFO] Socket error occurred: localhost/127.0.0.1:2181: Connection refused
+2022-05-07 18:10:13.511 o.a.s.s.o.a.z.ClientCnxn main-SendThread(localhost:2181) [INFO] Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2022-05-07 18:10:13.512 o.a.s.s.o.a.z.ClientCnxn main-SendThread(localhost:2181) [INFO] Socket error occurred: localhost/127.0.0.1:2181: Connection refused
+2022-05-07 18:10:14.614 o.a.s.s.o.a.z.ClientCnxn main-SendThread(localhost:2181) [INFO] Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2022-05-07 18:10:14.615 o.a.s.s.o.a.z.ClientCnxn main-SendThread(localhost:2181) [INFO] Socket error occurred: localhost/127.0.0.1:2181: Connection refused
+2022-05-07 18:10:15.717 o.a.s.s.o.a.z.ClientCnxn main-SendThread(localhost:2181) [INFO] Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2022-05-07 18:10:15.718 o.a.s.s.o.a.z.ClientCnxn main-SendThread(localhost:2181) [INFO] Socket error occurred: localhost/127.0.0.1:2181: Connection refused
+2022-05-07 18:10:16.820 o.a.s.s.o.a.z.ClientCnxn main-SendThread(localhost:2181) [INFO] Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2022-05-07 18:10:16.822 o.a.s.s.o.a.z.ClientCnxn main-SendThread(localhost:2181) [INFO] Socket error occurred: localhost/127.0.0.1:2181: Connection refused
+2022-05-07 18:10:17.923 o.a.s.s.o.a.z.ClientCnxn main-SendThread(localhost:2181) [INFO] Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2022-05-07 18:10:17.924 o.a.s.s.o.a.z.ClientCnxn main-SendThread(localhost:2181) [INFO] Socket error occurred: localhost/127.0.0.1:2181: Connection refused
+2022-05-07 18:10:19.026 o.a.s.s.o.a.z.ClientCnxn main-SendThread(localhost:2181) [INFO] Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2022-05-07 18:10:19.027 o.a.s.s.o.a.z.ClientCnxn main-SendThread(localhost:2181) [INFO] Socket error occurred: localhost/127.0.0.1:2181: Connection refused
+2022-05-07 18:10:20.129 o.a.s.s.o.a.z.ClientCnxn main-SendThread(localhost:2181) [INFO] Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2022-05-07 18:10:20.131 o.a.s.s.o.a.z.ClientCnxn main-SendThread(localhost:2181) [INFO] Socket error occurred: localhost/127.0.0.1:2181: Connection refused
+2022-05-07 18:10:21.232 o.a.s.s.o.a.z.ClientCnxn main-SendThread(localhost:2181) [INFO] Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2022-05-07 18:10:21.234 o.a.s.s.o.a.z.ClientCnxn main-SendThread(localhost:2181) [INFO] Socket error occurred: localhost/127.0.0.1:2181: Connection refused
+2022-05-07 18:10:22.335 o.a.s.s.o.a.z.ClientCnxn main-SendThread(localhost:2181) [INFO] Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2022-05-07 18:10:22.336 o.a.s.s.o.a.z.ClientCnxn main-SendThread(localhost:2181) [INFO] Socket error occurred: localhost/127.0.0.1:2181: Connection refused
+2022-05-07 18:10:23.438 o.a.s.s.o.a.z.ClientCnxn main-SendThread(localhost:2181) [INFO] Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2022-05-07 18:10:23.440 o.a.s.s.o.a.z.ClientCnxn main-SendThread(localhost:2181) [INFO] Socket error occurred: localhost/127.0.0.1:2181: Connection refused
+2022-05-07 18:10:24.542 o.a.s.s.o.a.z.ClientCnxn main-SendThread(localhost:2181) [INFO] Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2022-05-07 18:10:24.543 o.a.s.s.o.a.z.ClientCnxn main-SendThread(localhost:2181) [INFO] Socket error occurred: localhost/127.0.0.1:2181: Connection refused
+2022-05-07 18:10:25.645 o.a.s.s.o.a.z.ClientCnxn main-SendThread(localhost:2181) [INFO] Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2022-05-07 18:10:25.646 o.a.s.s.o.a.z.ClientCnxn main-SendThread(localhost:2181) [INFO] Socket error occurred: localhost/127.0.0.1:2181: Connection refused
+2022-05-07 18:10:26.748 o.a.s.s.o.a.z.ClientCnxn main-SendThread(localhost:2181) [INFO] Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2022-05-07 18:10:26.749 o.a.s.s.o.a.z.ClientCnxn main-SendThread(localhost:2181) [INFO] Socket error occurred: localhost/127.0.0.1:2181: Connection refused
+2022-05-07 18:10:27.851 o.a.s.s.o.a.z.ClientCnxn main-SendThread(localhost:2181) [INFO] Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2022-05-07 18:10:27.852 o.a.s.s.o.a.z.ClientCnxn main-SendThread(localhost:2181) [INFO] Socket error occurred: localhost/127.0.0.1:2181: Connection refused
+2022-05-07 18:10:28.054 o.a.s.s.o.a.c.f.s.ConnectionStateManager Curator-Framework-0 [INFO] State change: SUSPENDED
+2022-05-07 18:10:28.055 o.a.s.s.o.a.c.f.i.CuratorFrameworkImpl Curator-Framework-0 [ERROR] Background operation retry gave up
+org.apache.storm.shade.org.apache.zookeeper.KeeperException$ConnectionLossException: KeeperErrorCode = ConnectionLoss
+	at org.apache.storm.shade.org.apache.zookeeper.KeeperException.create(KeeperException.java:102) ~[storm-shaded-deps-2.4.0.jar:2.4.0]
+	at org.apache.storm.shade.org.apache.curator.framework.imps.CuratorFrameworkImpl.checkBackgroundRetry(CuratorFrameworkImpl.java:862) [storm-shaded-deps-2.4.0.jar:2.4.0]
+	at org.apache.storm.shade.org.apache.curator.framework.imps.CuratorFrameworkImpl.performBackgroundOperation(CuratorFrameworkImpl.java:990) [storm-shaded-deps-2.4.0.jar:2.4.0]
+	at org.apache.storm.shade.org.apache.curator.framework.imps.CuratorFrameworkImpl.backgroundOperationsLoop(CuratorFrameworkImpl.java:943) [storm-shaded-deps-2.4.0.jar:2.4.0]
+	at org.apache.storm.shade.org.apache.curator.framework.imps.CuratorFrameworkImpl.access$300(CuratorFrameworkImpl.java:66) [storm-shaded-deps-2.4.0.jar:2.4.0]
+	at org.apache.storm.shade.org.apache.curator.framework.imps.CuratorFrameworkImpl$4.call(CuratorFrameworkImpl.java:346) [storm-shaded-deps-2.4.0.jar:2.4.0]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+2022-05-07 18:10:28.081 o.a.s.s.o.a.c.f.i.CuratorFrameworkImpl Curator-Framework-0 [ERROR] Background retry gave up
+org.apache.storm.shade.org.apache.curator.CuratorConnectionLossException: KeeperErrorCode = ConnectionLoss
+	at org.apache.storm.shade.org.apache.curator.framework.imps.CuratorFrameworkImpl.performBackgroundOperation(CuratorFrameworkImpl.java:972) [storm-shaded-deps-2.4.0.jar:2.4.0]
+	at org.apache.storm.shade.org.apache.curator.framework.imps.CuratorFrameworkImpl.backgroundOperationsLoop(CuratorFrameworkImpl.java:943) [storm-shaded-deps-2.4.0.jar:2.4.0]
+	at org.apache.storm.shade.org.apache.curator.framework.imps.CuratorFrameworkImpl.access$300(CuratorFrameworkImpl.java:66) [storm-shaded-deps-2.4.0.jar:2.4.0]
+	at org.apache.storm.shade.org.apache.curator.framework.imps.CuratorFrameworkImpl$4.call(CuratorFrameworkImpl.java:346) [storm-shaded-deps-2.4.0.jar:2.4.0]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+2022-05-07 18:10:28.953 o.a.s.s.o.a.z.ClientCnxn main-SendThread(localhost:2181) [INFO] Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2022-05-07 18:10:28.954 o.a.s.s.o.a.z.ClientCnxn main-SendThread(localhost:2181) [INFO] Socket error occurred: localhost/127.0.0.1:2181: Connection refused
+2022-05-07 18:10:29.056 o.a.s.d.s.Supervisor main [ERROR] supervisor can't create stormClusterState
+2022-05-07 18:10:29.057 o.a.s.u.Utils main [ERROR] Received error in thread main.. terminating server...
+java.lang.Error: java.lang.RuntimeException: org.apache.storm.shade.org.apache.zookeeper.KeeperException$ConnectionLossException: KeeperErrorCode = ConnectionLoss for /storm
+	at org.apache.storm.utils.Utils.handleUncaughtException(Utils.java:663) ~[storm-client-2.4.0.jar:2.4.0]
+	at org.apache.storm.utils.Utils.handleUncaughtException(Utils.java:667) ~[storm-client-2.4.0.jar:2.4.0]
+	at org.apache.storm.utils.Utils.lambda$createDefaultUncaughtExceptionHandler$2(Utils.java:1047) ~[storm-client-2.4.0.jar:2.4.0]
+	at java.lang.ThreadGroup.uncaughtException(ThreadGroup.java:1055) [?:?]
+	at java.lang.ThreadGroup.uncaughtException(ThreadGroup.java:1050) [?:?]
+	at java.lang.Thread.dispatchUncaughtException(Thread.java:1997) [?:?]
+Caused by: java.lang.RuntimeException: org.apache.storm.shade.org.apache.zookeeper.KeeperException$ConnectionLossException: KeeperErrorCode = ConnectionLoss for /storm
+	at org.apache.storm.utils.Utils.wrapInRuntime(Utils.java:493) ~[storm-client-2.4.0.jar:2.4.0]
+	at org.apache.storm.zookeeper.ClientZookeeper.existsNode(ClientZookeeper.java:147) ~[storm-client-2.4.0.jar:2.4.0]
+	at org.apache.storm.zookeeper.ClientZookeeper.mkdirsImpl(ClientZookeeper.java:288) ~[storm-client-2.4.0.jar:2.4.0]
+	at org.apache.storm.zookeeper.ClientZookeeper.mkdirs(ClientZookeeper.java:70) ~[storm-client-2.4.0.jar:2.4.0]
+	at org.apache.storm.cluster.ZKStateStorage.<init>(ZKStateStorage.java:65) ~[storm-client-2.4.0.jar:2.4.0]
+	at org.apache.storm.cluster.ZKStateStorageFactory.mkStore(ZKStateStorageFactory.java:30) ~[storm-client-2.4.0.jar:2.4.0]
+	at org.apache.storm.cluster.ClusterUtils.mkStateStorageImpl(ClusterUtils.java:318) ~[storm-client-2.4.0.jar:2.4.0]
+	at org.apache.storm.cluster.ClusterUtils.mkStormClusterStateImpl(ClusterUtils.java:301) ~[storm-client-2.4.0.jar:2.4.0]
+	at org.apache.storm.cluster.ClusterUtils.mkStormClusterState(ClusterUtils.java:286) ~[storm-client-2.4.0.jar:2.4.0]
+	at org.apache.storm.daemon.supervisor.Supervisor.<init>(Supervisor.java:160) ~[storm-server-2.4.0.jar:2.4.0]
+	at org.apache.storm.daemon.supervisor.Supervisor.<init>(Supervisor.java:127) ~[storm-server-2.4.0.jar:2.4.0]
+	at org.apache.storm.daemon.supervisor.Supervisor.main(Supervisor.java:200) ~[storm-server-2.4.0.jar:2.4.0]
+Caused by: org.apache.storm.shade.org.apache.zookeeper.KeeperException$ConnectionLossException: KeeperErrorCode = ConnectionLoss for /storm
+	at org.apache.storm.shade.org.apache.zookeeper.KeeperException.create(KeeperException.java:102) ~[storm-shaded-deps-2.4.0.jar:2.4.0]
+	at org.apache.storm.shade.org.apache.zookeeper.KeeperException.create(KeeperException.java:54) ~[storm-shaded-deps-2.4.0.jar:2.4.0]
+	at org.apache.storm.shade.org.apache.zookeeper.ZooKeeper.exists(ZooKeeper.java:2021) ~[storm-shaded-deps-2.4.0.jar:2.4.0]
+	at org.apache.storm.shade.org.apache.curator.framework.imps.ExistsBuilderImpl$3.call(ExistsBuilderImpl.java:268) ~[storm-shaded-deps-2.4.0.jar:2.4.0]
+	at org.apache.storm.shade.org.apache.curator.framework.imps.ExistsBuilderImpl$3.call(ExistsBuilderImpl.java:257) ~[storm-shaded-deps-2.4.0.jar:2.4.0]
+	at org.apache.storm.shade.org.apache.curator.connection.StandardConnectionHandlingPolicy.callWithRetry(StandardConnectionHandlingPolicy.java:67) ~[storm-shaded-deps-2.4.0.jar:2.4.0]
+	at org.apache.storm.shade.org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:81) ~[storm-shaded-deps-2.4.0.jar:2.4.0]
+	at org.apache.storm.shade.org.apache.curator.framework.imps.ExistsBuilderImpl.pathInForegroundStandard(ExistsBuilderImpl.java:254) ~[storm-shaded-deps-2.4.0.jar:2.4.0]
+	at org.apache.storm.shade.org.apache.curator.framework.imps.ExistsBuilderImpl.pathInForeground(ExistsBuilderImpl.java:247) ~[storm-shaded-deps-2.4.0.jar:2.4.0]
+	at org.apache.storm.shade.org.apache.curator.framework.imps.ExistsBuilderImpl.forPath(ExistsBuilderImpl.java:206) ~[storm-shaded-deps-2.4.0.jar:2.4.0]
+	at org.apache.storm.shade.org.apache.curator.framework.imps.ExistsBuilderImpl.forPath(ExistsBuilderImpl.java:35) ~[storm-shaded-deps-2.4.0.jar:2.4.0]
+	at org.apache.storm.zookeeper.ClientZookeeper.existsNode(ClientZookeeper.java:144) ~[storm-client-2.4.0.jar:2.4.0]
+	at org.apache.storm.zookeeper.ClientZookeeper.mkdirsImpl(ClientZookeeper.java:288) ~[storm-client-2.4.0.jar:2.4.0]
+	at org.apache.storm.zookeeper.ClientZookeeper.mkdirs(ClientZookeeper.java:70) ~[storm-client-2.4.0.jar:2.4.0]
+	at org.apache.storm.cluster.ZKStateStorage.<init>(ZKStateStorage.java:65) ~[storm-client-2.4.0.jar:2.4.0]
+	at org.apache.storm.cluster.ZKStateStorageFactory.mkStore(ZKStateStorageFactory.java:30) ~[storm-client-2.4.0.jar:2.4.0]
+	at org.apache.storm.cluster.ClusterUtils.mkStateStorageImpl(ClusterUtils.java:318) ~[storm-client-2.4.0.jar:2.4.0]
+	at org.apache.storm.cluster.ClusterUtils.mkStormClusterStateImpl(ClusterUtils.java:301) ~[storm-client-2.4.0.jar:2.4.0]
+	at org.apache.storm.cluster.ClusterUtils.mkStormClusterState(ClusterUtils.java:286) ~[storm-client-2.4.0.jar:2.4.0]
+	at org.apache.storm.daemon.supervisor.Supervisor.<init>(Supervisor.java:160) ~[storm-server-2.4.0.jar:2.4.0]
+	at org.apache.storm.daemon.supervisor.Supervisor.<init>(Supervisor.java:127) ~[storm-server-2.4.0.jar:2.4.0]
+	at org.apache.storm.daemon.supervisor.Supervisor.main(Supervisor.java:200) ~[storm-server-2.4.0.jar:2.4.0]
+2022-05-07 18:12:12.383 o.a.s.v.ConfigValidation main [INFO] Will use [class org.apache.storm.DaemonConfig, class org.apache.storm.Config] for validation
+2022-05-07 18:12:12.547 o.a.s.s.o.a.z.ZooKeeper main [INFO] Client environment:zookeeper.version=3.5.9-83df9301aa5c2a5d284a9940177808c01bc35cef, built on 01/06/2021 20:03 GMT
+2022-05-07 18:12:12.547 o.a.s.s.o.a.z.ZooKeeper main [INFO] Client environment:host.name=mclovin-MS-7B23
+2022-05-07 18:12:12.547 o.a.s.s.o.a.z.ZooKeeper main [INFO] Client environment:java.version=11.0.15
+2022-05-07 18:12:12.547 o.a.s.s.o.a.z.ZooKeeper main [INFO] Client environment:java.vendor=Private Build
+2022-05-07 18:12:12.547 o.a.s.s.o.a.z.ZooKeeper main [INFO] Client environment:java.home=/usr/lib/jvm/java-11-openjdk-amd64
+2022-05-07 18:12:12.547 o.a.s.s.o.a.z.ZooKeeper main [INFO] Client environment:java.class.path=/home/mclovin/bigdata/apache-storm-2.4.0/*:/home/mclovin/bigdata/apache-storm-2.4.0/lib/commons-exec-1.3.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/metrics-core-3.2.6.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/curator-framework-4.3.0.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/jetty-continuation-9.4.14.v20181114.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/netty-transport-native-epoll-4.1.30.Final.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/httpclient-4.5.6.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/commons-collections-3.2.2.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/rocksdbjni-5.18.4.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/checker-qual-2.5.2.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/jetty-servlets-9.4.14.v20181114.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/log4j-core-2.17.1.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/netty-resolver-4.1.30.Final.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/jetty-util-9.4.14.v20181114.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/hadoop-auth-2.8.5.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/core.specs.alpha-0.2.44.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/error_prone_annotations-2.2.0.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/json-simple-1.1.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/commons-fileupload-1.3.3.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/javax.servlet-api-3.1.0.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/httpcore-4.4.10.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/netty-transport-4.1.30.Final.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/jetty-security-9.4.14.v20181114.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/audience-annotations-0.5.0.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/jakarta.xml.bind-api-2.3.2.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/storm-client-2.4.0.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/jakarta.activation-api-1.2.1.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/jakarta.activation-1.2.1.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/jcip-annotations-1.0-1.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/snakeyaml-1.26.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/jackson-dataformat-smile-2.10.0.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/asm-5.0.3.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/log4j-api-2.17.1.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/metrics-graphite-3.2.6.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/jackson-core-2.10.0.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/storm-shaded-deps-2.4.0.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/guava-27.0.1-jre.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/commons-logging-1.2.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/jetty-io-9.4.14.v20181114.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/jackson-annotations-2.10.0.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/metrics-jvm-3.2.6.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/jetty-servlet-9.4.14.v20181114.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/animal-sniffer-annotations-1.17.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/storm-core-2.4.0.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/commons-compress-1.18.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/log4j-slf4j-impl-2.17.1.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/jackson-databind-2.10.0.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/reflectasm-1.10.1.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/netty-common-4.1.30.Final.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/tools.logging-0.2.3.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/jetty-server-9.4.14.v20181114.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/joda-time-2.3.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/javax.annotation-api-1.3.2.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/carbonite-1.5.0.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/kryo-3.0.3.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/netty-buffer-4.1.30.Final.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/chill-java-0.8.0.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/commons-cli-1.4.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/netty-codec-4.1.30.Final.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/jetty-http-9.4.14.v20181114.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/kryo-shaded-3.0.3.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/netty-transport-native-unix-common-4.1.30.Final.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/jsr305-3.0.2.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/storm-server-2.4.0.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/log4j-over-slf4j-1.7.36.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/clojure-1.10.0.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/objenesis-2.1.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/accessors-smart-1.2.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/zookeeper-jute-3.5.9.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/nimbus-jose-jwt-4.41.1.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/commons-io-2.6.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/minlog-1.3.0.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/zookeeper-3.5.9.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/commons-lang-2.6.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/spec.alpha-0.2.176.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/curator-client-4.3.0.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/storm-clojure-2.4.0.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/slf4j-api-1.7.36.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/commons-codec-1.11.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/netty-handler-4.1.30.Final.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/json-smart-2.3.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/jline-0.9.94.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/j2objc-annotations-1.1.jar:/home/mclovin/bigdata/apache-storm-2.4.0/lib/failureaccess-1.0.1.jar:/home/mclovin/bigdata/apache-storm-2.4.0/extlib/*:/home/mclovin/bigdata/apache-storm-2.4.0/extlib-daemon/*:/home/mclovin/bigdata/apache-storm-2.4.0/conf
+2022-05-07 18:12:12.548 o.a.s.s.o.a.z.ZooKeeper main [INFO] Client environment:java.library.path=/usr/local/lib:/opt/local/lib:/usr/lib:/usr/lib64
+2022-05-07 18:12:12.548 o.a.s.s.o.a.z.ZooKeeper main [INFO] Client environment:java.io.tmpdir=/tmp
+2022-05-07 18:12:12.548 o.a.s.s.o.a.z.ZooKeeper main [INFO] Client environment:java.compiler=<NA>
+2022-05-07 18:12:12.548 o.a.s.s.o.a.z.ZooKeeper main [INFO] Client environment:os.name=Linux
+2022-05-07 18:12:12.548 o.a.s.s.o.a.z.ZooKeeper main [INFO] Client environment:os.arch=amd64
+2022-05-07 18:12:12.548 o.a.s.s.o.a.z.ZooKeeper main [INFO] Client environment:os.version=5.13.0-39-generic
+2022-05-07 18:12:12.548 o.a.s.s.o.a.z.ZooKeeper main [INFO] Client environment:user.name=mclovin
+2022-05-07 18:12:12.549 o.a.s.s.o.a.z.ZooKeeper main [INFO] Client environment:user.home=/home/mclovin
+2022-05-07 18:12:12.549 o.a.s.s.o.a.z.ZooKeeper main [INFO] Client environment:user.dir=/home/mclovin/bigdata/apache-storm-2.4.0
+2022-05-07 18:12:12.549 o.a.s.s.o.a.z.ZooKeeper main [INFO] Client environment:os.memory.free=213MB
+2022-05-07 18:12:12.549 o.a.s.s.o.a.z.ZooKeeper main [INFO] Client environment:os.memory.max=256MB
+2022-05-07 18:12:12.549 o.a.s.s.o.a.z.ZooKeeper main [INFO] Client environment:os.memory.total=252MB
+2022-05-07 18:12:12.550 o.a.s.s.o.a.c.u.Compatibility main [INFO] Using emulated InjectSessionExpiration
+2022-05-07 18:12:12.574 o.a.s.z.ClientZookeeper main [INFO] Starting ZK Curator
+2022-05-07 18:12:12.574 o.a.s.s.o.a.c.f.i.CuratorFrameworkImpl main [INFO] Starting
+2022-05-07 18:12:12.577 o.a.s.s.o.a.z.ZooKeeper main [INFO] Initiating client connection, connectString=localhost:2181 sessionTimeout=20000 watcher=org.apache.storm.shade.org.apache.curator.ConnectionState@53bf7094
+2022-05-07 18:12:12.580 o.a.s.s.o.a.z.c.X509Util main [INFO] Setting -D jdk.tls.rejectClientInitiatedRenegotiation=true to disable client-initiated TLS renegotiation
+2022-05-07 18:12:12.584 o.a.s.s.o.a.z.ClientCnxnSocket main [INFO] jute.maxbuffer value is 4194304 Bytes
+2022-05-07 18:12:12.589 o.a.s.s.o.a.z.ClientCnxn main [INFO] zookeeper.request.timeout value is 0. feature enabled=
+2022-05-07 18:12:12.596 o.a.s.s.o.a.z.ClientCnxn main-SendThread(localhost:2181) [INFO] Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2022-05-07 18:12:12.596 o.a.s.s.o.a.c.f.i.CuratorFrameworkImpl main [INFO] Default schema
+2022-05-07 18:12:12.601 o.a.s.s.o.a.z.ClientCnxn main-SendThread(localhost:2181) [INFO] Socket connection established, initiating session, client: /127.0.0.1:43150, server: localhost/127.0.0.1:2181
+2022-05-07 18:12:12.616 o.a.s.s.o.a.z.ClientCnxn main-SendThread(localhost:2181) [INFO] Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x100004fdb6b0008, negotiated timeout = 20000
+2022-05-07 18:12:12.619 o.a.s.s.o.a.c.f.s.ConnectionStateManager main-EventThread [INFO] State change: CONNECTED
+2022-05-07 18:12:12.625 o.a.s.s.o.a.c.f.i.EnsembleTracker main-EventThread [INFO] New config event received: {}
+2022-05-07 18:12:12.625 o.a.s.s.o.a.c.f.i.CuratorFrameworkImpl Curator-Framework-0 [INFO] backgroundOperationsLoop exiting
+2022-05-07 18:12:12.626 o.a.s.s.o.a.c.f.i.EnsembleTracker main-EventThread [INFO] New config event received: {}
+2022-05-07 18:12:12.742 o.a.s.s.o.a.z.ZooKeeper main [INFO] Session: 0x100004fdb6b0008 closed
+2022-05-07 18:12:12.742 o.a.s.s.o.a.z.ClientCnxn main-EventThread [INFO] EventThread shut down for session: 0x100004fdb6b0008
+2022-05-07 18:12:12.748 o.a.s.z.ClientZookeeper main [INFO] Starting ZK Curator
+2022-05-07 18:12:12.749 o.a.s.s.o.a.c.f.i.CuratorFrameworkImpl main [INFO] Starting
+2022-05-07 18:12:12.750 o.a.s.s.o.a.z.ZooKeeper main [INFO] Initiating client connection, connectString=localhost:2181/storm sessionTimeout=20000 watcher=org.apache.storm.shade.org.apache.curator.ConnectionState@412c995d
+2022-05-07 18:12:12.751 o.a.s.s.o.a.z.ClientCnxnSocket main [INFO] jute.maxbuffer value is 4194304 Bytes
+2022-05-07 18:12:12.752 o.a.s.s.o.a.z.ClientCnxn main [INFO] zookeeper.request.timeout value is 0. feature enabled=
+2022-05-07 18:12:12.756 o.a.s.s.o.a.z.ClientCnxn main-SendThread(localhost:2181) [INFO] Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2022-05-07 18:12:12.756 o.a.s.s.o.a.c.f.i.CuratorFrameworkImpl main [INFO] Default schema
+2022-05-07 18:12:12.757 o.a.s.s.o.a.z.ClientCnxn main-SendThread(localhost:2181) [INFO] Socket connection established, initiating session, client: /127.0.0.1:43152, server: localhost/127.0.0.1:2181
+2022-05-07 18:12:12.765 o.a.s.s.o.a.z.ClientCnxn main-SendThread(localhost:2181) [INFO] Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x100004fdb6b0009, negotiated timeout = 20000
+2022-05-07 18:12:12.766 o.a.s.s.o.a.c.f.s.ConnectionStateManager main-EventThread [INFO] State change: CONNECTED
+2022-05-07 18:12:12.770 o.a.s.s.o.a.c.f.i.EnsembleTracker main-EventThread [INFO] New config event received: {}
+2022-05-07 18:12:12.771 o.a.s.s.o.a.c.f.i.EnsembleTracker main-EventThread [INFO] New config event received: {}
+2022-05-07 18:12:12.796 o.a.s.l.AsyncLocalizer main [INFO] Reconstruct localized resources
+2022-05-07 18:12:12.803 o.a.s.d.s.Supervisor main [INFO] Starting supervisor for storm version '2.4.0'.
+2022-05-07 18:12:12.807 o.a.s.d.s.Supervisor main [INFO] Starting Supervisor with conf {storm.messaging.netty.min_wait_ms=100, topology.backpressure.wait.strategy=org.apache.storm.policy.WaitStrategyProgressive, storm.resource.isolation.plugin=org.apache.storm.container.cgroup.CgroupManager, storm.zookeeper.auth.user=null, storm.messaging.netty.buffer_size=5242880, storm.exhibitor.port=8080, topology.bolt.wait.progressive.level1.count=1, pacemaker.auth.method=NONE, storm.oci.cgroup.root=/sys/fs/cgroup, ui.filter=null, worker.profiler.enabled=false, executor.metrics.frequency.secs=60, supervisor.thrift.threads=16, ui.http.creds.plugin=org.apache.storm.security.auth.DefaultHttpCredentialsPlugin, supervisor.supervisors.commands=[], supervisor.queue.size=128, logviewer.cleanup.age.mins=10080, topology.tuple.serializer=org.apache.storm.serialization.types.ListDelegateSerializer, storm.cgroup.memory.enforcement.enable=false, drpc.port=3772, supervisor.localizer.update.blob.interval.secs=30, topology.max.spout.pending=null, topology.transfer.buffer.size=1000, storm.oci.nscd.dir=/var/run/nscd, nimbus.worker.heartbeats.recovery.strategy.class=org.apache.storm.nimbus.TimeOutWorkerHeartbeatsRecoveryStrategy, worker.metrics={CGroupMemory=org.apache.storm.metrics2.cgroup.CGroupMemoryUsage, CGroupMemoryLimit=org.apache.storm.metrics2.cgroup.CGroupMemoryLimit, CGroupCpu=org.apache.storm.metrics2.cgroup.CGroupCpu, CGroupCpuGuarantee=org.apache.storm.metrics2.cgroup.CGroupCpuGuarantee, CGroupCpuGuaranteeByCfsQuota=org.apache.storm.metrics2.cgroup.CGroupCpuGuaranteeByCfsQuota, CGroupCpuStat=org.apache.storm.metrics2.cgroup.CGroupCpuStat}, logviewer.port=8000, worker.childopts=-Xmx%HEAP-MEM%m -XX:+PrintGCDetails -Xloggc:artifacts/gc.log -XX:+PrintGCDateStamps -XX:+PrintGCTimeStamps -XX:+UseGCLogFileRotation -XX:NumberOfGCLogFiles=10 -XX:GCLogFileSize=1M -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=artifacts/heapdump, topology.component.cpu.pcore.percent=10.0, storm.daemon.metrics.reporter.plugins=[org.apache.storm.daemon.metrics.reporters.JmxPreparableReporter], worker.max.timeout.secs=600, blacklist.scheduler.resume.time.secs=1800, drpc.childopts=-Xmx768m, nimbus.task.launch.secs=120, logviewer.childopts=-Xmx128m, topology.ras.acker.executors.per.worker=1, storm.supervisor.hard.memory.limit.overage.mb=2024, storm.zookeeper.servers=[localhost], storm.messaging.transport=org.apache.storm.messaging.netty.Context, storm.messaging.netty.authentication=false, topology.localityaware.higher.bound=0.8, storm.cgroup.memory.limit.tolerance.margin.mb=0.0, storm.cgroup.hierarchy.name=storm, blacklist.scheduler.assume.supervisor.bad.based.on.bad.slot=true, storm.metricprocessor.class=org.apache.storm.metricstore.NimbusMetricProcessor, topology.kryo.factory=org.apache.storm.serialization.DefaultKryoFactory, nimbus.assignments.service.threads=10, worker.heap.memory.mb=768, storm.network.topography.plugin=org.apache.storm.networktopography.DefaultRackDNSToSwitchMapping, supervisor.slots.ports=[6700, 6701, 6702, 6703], topology.stats.sample.rate=0.05, storm.local.dir=storm-local, topology.backpressure.wait.park.microsec=100, topology.ras.constraint.max.state.search=10000, storm.oci.cgroup.parent=/storm, topology.testing.always.try.serialize=false, nimbus.assignments.service.thread.queue.size=100, storm.principal.tolocal=org.apache.storm.security.auth.DefaultPrincipalToLocal, java.library.path=/usr/local/lib:/opt/local/lib:/usr/lib:/usr/lib64, nimbus.local.assignments.backend.class=org.apache.storm.assignments.InMemoryAssignmentBackend, worker.gc.childopts=, storm.group.mapping.service.cache.duration.secs=120, topology.multilang.serializer=org.apache.storm.multilang.JsonSerializer, drpc.request.timeout.secs=600, nimbus.blobstore.class=org.apache.storm.blobstore.LocalFsBlobStore, topology.state.synchronization.timeout.secs=60, topology.bolt.wait.progressive.level2.count=1000, topology.worker.shared.thread.pool.size=4, topology.executor.receive.buffer.size=32768, pacemaker.servers=[], supervisor.monitor.frequency.secs=3, storm.nimbus.retry.times=5, topology.transfer.batch.size=1, transactional.zookeeper.port=null, storm.auth.simple-white-list.users=[], topology.scheduler.strategy=org.apache.storm.scheduler.resource.strategies.scheduling.DefaultResourceAwareStrategy, storm.zookeeper.port=2181, storm.zookeeper.retry.intervalceiling.millis=30000, storm.cluster.state.store=org.apache.storm.cluster.ZKStateStorageFactory, nimbus.thrift.port=6627, blacklist.scheduler.tolerance.count=3, nimbus.thrift.threads=64, supervisor.supervisors=[], nimbus.seeds=[localhost], storm.cluster.metrics.consumer.publish.interval.secs=60, logviewer.filter.params=null, topology.min.replication.count=1, nimbus.blobstore.expiration.secs=600, storm.group.mapping.service=org.apache.storm.security.auth.ShellBasedGroupsMapping, storm.nimbus.retry.interval.millis=2000, topology.max.task.parallelism=null, topology.backpressure.wait.progressive.level2.count=1000, drpc.https.keystore.password=*****, resource.aware.scheduler.constraint.max.state.search=100000, supervisor.heartbeat.frequency.secs=5, nimbus.credential.renewers.freq.secs=600, storm.supervisor.medium.memory.grace.period.ms=30000, storm.thrift.transport=org.apache.storm.security.auth.SimpleTransportPlugin, storm.cgroup.hierarchy.dir=/cgroup/storm_resources, storm.zookeeper.auth.password=null, ui.port=8080, drpc.authorizer.acl.strict=false, topology.message.timeout.secs=30, topology.error.throttle.interval.secs=10, topology.backpressure.check.millis=50, drpc.https.keystore.type=JKS, supervisor.memory.capacity.mb=4096.0, storm.metricstore.class=org.apache.storm.metricstore.rocksdb.RocksDbStore, drpc.authorizer.acl.filename=drpc-auth-acl.yaml, topology.builtin.metrics.bucket.size.secs=60, topology.spout.wait.park.microsec=100, storm.local.mode.zmq=false, pacemaker.client.max.threads=2, ui.header.buffer.bytes=4096, topology.shellbolt.max.pending=100, topology.serialized.message.size.metrics=false, drpc.max_buffer_size=1048576, drpc.disable.http.binding=true, storm.codedistributor.class=org.apache.storm.codedistributor.LocalFileSystemCodeDistributor, worker.profiler.childopts=-XX:+UnlockCommercialFeatures -XX:+FlightRecorder, nimbus.supervisor.timeout.secs=60, storm.supervisor.cgroup.rootdir=storm, topology.worker.max.heap.size.mb=768.0, storm.zookeeper.root=/storm, topology.disable.loadaware.messaging=false, topology.ras.one.executor.per.worker=false, storm.supervisor.hard.memory.limit.multiplier=2.0, nimbus.topology.validator=org.apache.storm.nimbus.DefaultTopologyValidator, worker.heartbeat.frequency.secs=1, storm.messaging.netty.max_wait_ms=1000, topology.backpressure.wait.progressive.level1.count=1, topology.max.error.report.per.interval=5, nimbus.thrift.max_buffer_size=1048576, storm.metricstore.rocksdb.location=storm_rocks, storm.supervisor.low.memory.threshold.mb=1024, pacemaker.max.threads=50, ui.pagination=20, ui.disable.http.binding=true, supervisor.blobstore.download.max_retries=3, topology.enable.message.timeouts=true, logviewer.disable.http.binding=true, storm.messaging.netty.transfer.batch.size=262144, topology.spout.wait.progressive.level2.count=0, blacklist.scheduler.strategy=org.apache.storm.scheduler.blacklist.strategies.DefaultBlacklistStrategy, storm.metricstore.rocksdb.retention_hours=240, supervisor.run.worker.as.user=false, storm.messaging.netty.client_worker_threads=1, topology.tasks=null, supervisor.thrift.socket.timeout.ms=5000, storm.group.mapping.service.params=null, drpc.http.port=3774, transactional.zookeeper.root=/transactional, supervisor.blobstore.download.thread.count=5, logviewer.filter=null, pacemaker.kerberos.users=[], topology.spout.wait.strategy=org.apache.storm.policy.WaitStrategyProgressive, storm.blobstore.inputstream.buffer.size.bytes=65536, supervisor.worker.heartbeats.max.timeout.secs=600, supervisor.worker.timeout.secs=30, topology.worker.receiver.thread.count=1, logviewer.max.sum.worker.logs.size.mb=4096, topology.executor.overflow.limit=0, topology.batch.flush.interval.millis=1, nimbus.file.copy.expiration.secs=600, pacemaker.port=6699, topology.worker.logwriter.childopts=-Xmx64m, drpc.http.creds.plugin=org.apache.storm.security.auth.DefaultHttpCredentialsPlugin, nimbus.topology.blobstore.deletion.delay.ms=300000, storm.blobstore.acl.validation.enabled=false, ui.filter.params=null, topology.workers=1, blacklist.scheduler.tolerance.time.secs=300, storm.supervisor.medium.memory.threshold.mb=1536, topology.environment=null, drpc.invocations.port=3773, storm.metricstore.rocksdb.create_if_missing=true, nimbus.cleanup.inbox.freq.secs=600, client.blobstore.class=org.apache.storm.blobstore.NimbusBlobStore, topology.fall.back.on.java.serialization=false, storm.nimbus.retry.intervalceiling.millis=60000, storm.nimbus.zookeeper.acls.fixup=true, logviewer.appender.name=A1, ui.users=null, pacemaker.childopts=-Xmx1024m, storm.messaging.netty.server_worker_threads=1, scheduler.display.resource=false, ui.actions.enabled=true, storm.thrift.socket.timeout.ms=600000, storm.topology.classpath.beginning.enabled=false, storm.zookeeper.connection.timeout=15000, topology.tick.tuple.freq.secs=null, nimbus.inbox.jar.expiration.secs=3600, topology.debug=false, storm.zookeeper.retry.interval=1000, storm.messaging.netty.buffer.high.watermark=16777216, storm.blobstore.dependency.jar.upload.chunk.size.bytes=1048576, worker.log.level.reset.poll.secs=30, storm.exhibitor.poll.uripath=/exhibitor/v1/cluster/list, storm.zookeeper.retry.times=5, nimbus.code.sync.freq.secs=120, topology.component.resources.offheap.memory.mb=0.0, topology.spout.wait.progressive.level1.count=0, topology.state.checkpoint.interval.ms=1000, topology.priority=29, supervisor.localizer.cleanup.interval.ms=30000, storm.health.check.dir=healthchecks, supervisor.cpu.capacity=400.0, topology.backpressure.wait.progressive.level3.sleep.millis=1, storm.cgroup.resources=[cpu, memory], storm.worker.min.cpu.pcore.percent=0.0, topology.classpath=null, storm.nimbus.zookeeper.acls.check=true, num.stat.buckets=20, topology.spout.wait.progressive.level3.sleep.millis=1, supervisor.localizer.cache.target.size.mb=10240, topology.worker.childopts=null, drpc.https.port=-1, topology.bolt.wait.park.microsec=100, topology.max.replication.wait.time.sec=60, storm.cgroup.cgexec.cmd=/bin/cgexec, topology.acker.executors=null, topology.bolt.wait.progressive.level3.sleep.millis=1, supervisor.worker.start.timeout.secs=120, supervisor.worker.shutdown.sleep.secs=3, logviewer.max.per.worker.logs.size.mb=2048, topology.trident.batch.emit.interval.millis=500, task.heartbeat.frequency.secs=3, supervisor.enable=true, supervisor.thrift.max_buffer_size=1048576, supervisor.blobstore.class=org.apache.storm.blobstore.NimbusBlobStore, topology.producer.batch.size=1, drpc.worker.threads=64, resource.aware.scheduler.priority.strategy=org.apache.storm.scheduler.resource.strategies.priority.DefaultSchedulingPriorityStrategy, blacklist.scheduler.reporter=org.apache.storm.scheduler.blacklist.reporters.LogReporter, storm.messaging.netty.socket.backlog=500, storm.cgroup.inherit.cpuset.configs=false, nimbus.queue.size=100000, drpc.queue.size=128, ui.disable.spout.lag.monitoring=true, topology.eventlogger.executors=0, pacemaker.base.threads=10, nimbus.childopts=-Xmx1024m, topology.spout.recvq.skips=3, storm.resource.isolation.plugin.enable=false, nimbus.monitor.freq.secs=10, storm.supervisor.memory.limit.tolerance.margin.mb=128.0, storm.disable.symlinks=false, topology.localityaware.lower.bound=0.2, transactional.zookeeper.servers=null, nimbus.task.timeout.secs=30, logs.users=null, pacemaker.thrift.message.size.max=10485760, topology.ras.one.component.per.worker=false, ui.host=0.0.0.0, supervisor.thrift.port=6628, topology.bolt.wait.strategy=org.apache.storm.policy.WaitStrategyProgressive, pacemaker.thread.timeout=10, storm.meta.serialization.delegate=org.apache.storm.serialization.GzipThriftSerializationDelegate, dev.zookeeper.path=/tmp/dev-storm-zookeeper, topology.skip.missing.kryo.registrations=false, drpc.invocations.threads=64, storm.zookeeper.session.timeout=20000, storm.metricstore.rocksdb.metadata_string_cache_capacity=4000, storm.workers.artifacts.dir=workers-artifacts, topology.component.resources.onheap.memory.mb=128.0, storm.log4j2.conf.dir=log4j2, storm.cluster.mode=distributed, ui.childopts=-Xmx768m, task.refresh.poll.secs=10, supervisor.childopts=-Xmx256m, task.credentials.poll.secs=30, storm.health.check.timeout.ms=5000, storm.blobstore.replication.factor=3, worker.profiler.command=flight.bash, storm.messaging.netty.buffer.low.watermark=8388608}
+2022-05-07 18:12:12.843 o.a.s.d.s.ContainerLauncher main [INFO] storm.resource.isolation.plugin.enable is false. Using default resource isolation plugin: org.apache.storm.container.DefaultResourceIsolationManager@47b2e9e1
+2022-05-07 18:12:12.847 o.a.s.d.s.Slot main [INFO] SLOT mclovin-MS-7B23:6700 Starting in state empty - assignment null
+2022-05-07 18:12:12.848 o.a.s.d.s.Slot main [INFO] SLOT mclovin-MS-7B23:6701 Starting in state empty - assignment null
+2022-05-07 18:12:12.848 o.a.s.d.s.Slot main [INFO] SLOT mclovin-MS-7B23:6702 Starting in state empty - assignment null
+2022-05-07 18:12:12.848 o.a.s.d.s.Slot main [INFO] SLOT mclovin-MS-7B23:6703 Starting in state empty - assignment null
+2022-05-07 18:12:12.852 o.a.s.d.s.Supervisor main [INFO] Starting supervisor with id bc792d30-9922-4931-9b75-0aa7d919c07b-127.0.1.1 at host mclovin-MS-7B23.
+2022-05-07 18:12:12.856 o.a.s.d.m.MetricsUtils main [INFO] Using statistics reporter plugin:org.apache.storm.daemon.metrics.reporters.JmxPreparableReporter
+2022-05-07 18:12:12.857 o.a.s.d.m.r.JmxPreparableReporter main [INFO] Preparing...
+2022-05-07 18:12:12.867 o.a.s.m.StormMetricsRegistry main [INFO] Started statistics report plugin...
+2022-05-07 18:12:13.868 o.a.s.u.NimbusClient WorkerHBTimer [INFO] Found leader nimbus : mclovin-MS-7B23:6627
+2022-05-07 18:12:42.851 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 1 [INFO] Starting cleanup
+2022-05-07 18:12:42.851 o.a.s.d.s.t.SupervisorHealthCheck EventTimer [INFO] Running supervisor healthchecks...
+2022-05-07 18:12:42.855 o.a.s.h.HealthChecker EventTimer [INFO] The supervisor healthchecks succeeded.
+2022-05-07 18:12:42.896 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 1 [INFO] Finish cleanup
+2022-05-07 18:13:12.850 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 1 [INFO] Starting cleanup
+2022-05-07 18:13:12.858 o.a.s.d.s.t.SupervisorHealthCheck EventTimer [INFO] Running supervisor healthchecks...
+2022-05-07 18:13:12.858 o.a.s.h.HealthChecker EventTimer [INFO] The supervisor healthchecks succeeded.
+2022-05-07 18:13:12.861 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 1 [INFO] Finish cleanup
+2022-05-07 18:13:42.850 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 0 [INFO] Starting cleanup
+2022-05-07 18:13:42.857 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 0 [INFO] Finish cleanup
+2022-05-07 18:13:42.858 o.a.s.d.s.t.SupervisorHealthCheck EventTimer [INFO] Running supervisor healthchecks...
+2022-05-07 18:13:42.858 o.a.s.h.HealthChecker EventTimer [INFO] The supervisor healthchecks succeeded.
+2022-05-07 18:14:12.850 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 2 [INFO] Starting cleanup
+2022-05-07 18:14:12.857 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 2 [INFO] Finish cleanup
+2022-05-07 18:14:12.858 o.a.s.d.s.t.SupervisorHealthCheck EventTimer [INFO] Running supervisor healthchecks...
+2022-05-07 18:14:12.858 o.a.s.h.HealthChecker EventTimer [INFO] The supervisor healthchecks succeeded.
+2022-05-07 18:14:42.850 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 1 [INFO] Starting cleanup
+2022-05-07 18:14:42.857 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 1 [INFO] Finish cleanup
+2022-05-07 18:14:42.859 o.a.s.d.s.t.SupervisorHealthCheck EventTimer [INFO] Running supervisor healthchecks...
+2022-05-07 18:14:42.859 o.a.s.h.HealthChecker EventTimer [INFO] The supervisor healthchecks succeeded.
+2022-05-07 18:15:12.850 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 0 [INFO] Starting cleanup
+2022-05-07 18:15:12.858 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 0 [INFO] Finish cleanup
+2022-05-07 18:15:12.859 o.a.s.d.s.t.SupervisorHealthCheck EventTimer [INFO] Running supervisor healthchecks...
+2022-05-07 18:15:12.860 o.a.s.h.HealthChecker EventTimer [INFO] The supervisor healthchecks succeeded.
+2022-05-07 18:15:42.850 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 2 [INFO] Starting cleanup
+2022-05-07 18:15:42.856 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 2 [INFO] Finish cleanup
+2022-05-07 18:15:42.860 o.a.s.d.s.t.SupervisorHealthCheck EventTimer [INFO] Running supervisor healthchecks...
+2022-05-07 18:15:42.861 o.a.s.h.HealthChecker EventTimer [INFO] The supervisor healthchecks succeeded.
+2022-05-07 18:16:12.850 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 1 [INFO] Starting cleanup
+2022-05-07 18:16:12.860 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 1 [INFO] Finish cleanup
+2022-05-07 18:16:12.863 o.a.s.d.s.t.SupervisorHealthCheck EventTimer [INFO] Running supervisor healthchecks...
+2022-05-07 18:16:12.864 o.a.s.h.HealthChecker EventTimer [INFO] The supervisor healthchecks succeeded.
+2022-05-07 18:16:42.850 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 0 [INFO] Starting cleanup
+2022-05-07 18:16:42.860 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 0 [INFO] Finish cleanup
+2022-05-07 18:16:42.864 o.a.s.d.s.t.SupervisorHealthCheck EventTimer [INFO] Running supervisor healthchecks...
+2022-05-07 18:16:42.865 o.a.s.h.HealthChecker EventTimer [INFO] The supervisor healthchecks succeeded.
+2022-05-07 18:17:12.850 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 2 [INFO] Starting cleanup
+2022-05-07 18:17:12.859 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 2 [INFO] Finish cleanup
+2022-05-07 18:17:12.865 o.a.s.d.s.t.SupervisorHealthCheck EventTimer [INFO] Running supervisor healthchecks...
+2022-05-07 18:17:12.865 o.a.s.h.HealthChecker EventTimer [INFO] The supervisor healthchecks succeeded.
+2022-05-07 18:17:42.850 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 1 [INFO] Starting cleanup
+2022-05-07 18:17:42.858 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 1 [INFO] Finish cleanup
+2022-05-07 18:17:42.865 o.a.s.d.s.t.SupervisorHealthCheck EventTimer [INFO] Running supervisor healthchecks...
+2022-05-07 18:17:42.865 o.a.s.h.HealthChecker EventTimer [INFO] The supervisor healthchecks succeeded.
+2022-05-07 18:18:12.850 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 0 [INFO] Starting cleanup
+2022-05-07 18:18:12.859 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 0 [INFO] Finish cleanup
+2022-05-07 18:18:12.866 o.a.s.d.s.t.SupervisorHealthCheck EventTimer [INFO] Running supervisor healthchecks...
+2022-05-07 18:18:12.866 o.a.s.h.HealthChecker EventTimer [INFO] The supervisor healthchecks succeeded.
+2022-05-07 18:18:42.850 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 2 [INFO] Starting cleanup
+2022-05-07 18:18:42.859 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 2 [INFO] Finish cleanup
+2022-05-07 18:18:42.866 o.a.s.d.s.t.SupervisorHealthCheck EventTimer [INFO] Running supervisor healthchecks...
+2022-05-07 18:18:42.866 o.a.s.h.HealthChecker EventTimer [INFO] The supervisor healthchecks succeeded.
+2022-05-07 18:19:12.850 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 1 [INFO] Starting cleanup
+2022-05-07 18:19:12.859 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 1 [INFO] Finish cleanup
+2022-05-07 18:19:12.866 o.a.s.d.s.t.SupervisorHealthCheck EventTimer [INFO] Running supervisor healthchecks...
+2022-05-07 18:19:12.867 o.a.s.h.HealthChecker EventTimer [INFO] The supervisor healthchecks succeeded.
+2022-05-07 18:19:42.851 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 0 [INFO] Starting cleanup
+2022-05-07 18:19:42.858 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 0 [INFO] Finish cleanup
+2022-05-07 18:19:42.867 o.a.s.d.s.t.SupervisorHealthCheck EventTimer [INFO] Running supervisor healthchecks...
+2022-05-07 18:19:42.867 o.a.s.h.HealthChecker EventTimer [INFO] The supervisor healthchecks succeeded.
+2022-05-07 18:20:12.850 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 2 [INFO] Starting cleanup
+2022-05-07 18:20:12.859 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 2 [INFO] Finish cleanup
+2022-05-07 18:20:12.867 o.a.s.d.s.t.SupervisorHealthCheck EventTimer [INFO] Running supervisor healthchecks...
+2022-05-07 18:20:12.868 o.a.s.h.HealthChecker EventTimer [INFO] The supervisor healthchecks succeeded.
+2022-05-07 18:20:42.850 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 1 [INFO] Starting cleanup
+2022-05-07 18:20:42.857 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 1 [INFO] Finish cleanup
+2022-05-07 18:20:42.869 o.a.s.d.s.t.SupervisorHealthCheck EventTimer [INFO] Running supervisor healthchecks...
+2022-05-07 18:20:42.869 o.a.s.h.HealthChecker EventTimer [INFO] The supervisor healthchecks succeeded.
+2022-05-07 18:21:12.850 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 0 [INFO] Starting cleanup
+2022-05-07 18:21:12.859 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 0 [INFO] Finish cleanup
+2022-05-07 18:21:12.870 o.a.s.d.s.t.SupervisorHealthCheck EventTimer [INFO] Running supervisor healthchecks...
+2022-05-07 18:21:12.870 o.a.s.h.HealthChecker EventTimer [INFO] The supervisor healthchecks succeeded.
+2022-05-07 18:21:42.850 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 2 [INFO] Starting cleanup
+2022-05-07 18:21:42.861 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 2 [INFO] Finish cleanup
+2022-05-07 18:21:42.870 o.a.s.d.s.t.SupervisorHealthCheck EventTimer [INFO] Running supervisor healthchecks...
+2022-05-07 18:21:42.870 o.a.s.h.HealthChecker EventTimer [INFO] The supervisor healthchecks succeeded.
+2022-05-07 18:22:12.850 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 1 [INFO] Starting cleanup
+2022-05-07 18:22:12.866 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 1 [INFO] Finish cleanup
+2022-05-07 18:22:12.870 o.a.s.d.s.t.SupervisorHealthCheck EventTimer [INFO] Running supervisor healthchecks...
+2022-05-07 18:22:12.871 o.a.s.h.HealthChecker EventTimer [INFO] The supervisor healthchecks succeeded.
+2022-05-07 18:22:42.850 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 0 [INFO] Starting cleanup
+2022-05-07 18:22:42.855 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 0 [INFO] Finish cleanup
+2022-05-07 18:22:42.871 o.a.s.d.s.t.SupervisorHealthCheck EventTimer [INFO] Running supervisor healthchecks...
+2022-05-07 18:22:42.871 o.a.s.h.HealthChecker EventTimer [INFO] The supervisor healthchecks succeeded.
+2022-05-07 18:23:12.850 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 2 [INFO] Starting cleanup
+2022-05-07 18:23:12.855 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 2 [INFO] Finish cleanup
+2022-05-07 18:23:12.871 o.a.s.d.s.t.SupervisorHealthCheck EventTimer [INFO] Running supervisor healthchecks...
+2022-05-07 18:23:12.872 o.a.s.h.HealthChecker EventTimer [INFO] The supervisor healthchecks succeeded.
+2022-05-07 18:23:42.850 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 1 [INFO] Starting cleanup
+2022-05-07 18:23:42.862 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 1 [INFO] Finish cleanup
+2022-05-07 18:23:42.873 o.a.s.d.s.t.SupervisorHealthCheck EventTimer [INFO] Running supervisor healthchecks...
+2022-05-07 18:23:42.873 o.a.s.h.HealthChecker EventTimer [INFO] The supervisor healthchecks succeeded.
+2022-05-07 18:24:12.850 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 0 [INFO] Starting cleanup
+2022-05-07 18:24:12.855 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 0 [INFO] Finish cleanup
+2022-05-07 18:24:12.873 o.a.s.d.s.t.SupervisorHealthCheck EventTimer [INFO] Running supervisor healthchecks...
+2022-05-07 18:24:12.873 o.a.s.h.HealthChecker EventTimer [INFO] The supervisor healthchecks succeeded.
+2022-05-07 18:24:42.850 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 2 [INFO] Starting cleanup
+2022-05-07 18:24:42.854 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 2 [INFO] Finish cleanup
+2022-05-07 18:24:42.874 o.a.s.d.s.t.SupervisorHealthCheck EventTimer [INFO] Running supervisor healthchecks...
+2022-05-07 18:24:42.874 o.a.s.h.HealthChecker EventTimer [INFO] The supervisor healthchecks succeeded.
+2022-05-07 18:25:12.850 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 1 [INFO] Starting cleanup
+2022-05-07 18:25:12.859 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 1 [INFO] Finish cleanup
+2022-05-07 18:25:12.875 o.a.s.d.s.t.SupervisorHealthCheck EventTimer [INFO] Running supervisor healthchecks...
+2022-05-07 18:25:12.875 o.a.s.h.HealthChecker EventTimer [INFO] The supervisor healthchecks succeeded.
+2022-05-07 18:25:42.850 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 0 [INFO] Starting cleanup
+2022-05-07 18:25:42.859 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 0 [INFO] Finish cleanup
+2022-05-07 18:25:42.875 o.a.s.d.s.t.SupervisorHealthCheck EventTimer [INFO] Running supervisor healthchecks...
+2022-05-07 18:25:42.875 o.a.s.h.HealthChecker EventTimer [INFO] The supervisor healthchecks succeeded.
+2022-05-07 18:26:12.850 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 2 [INFO] Starting cleanup
+2022-05-07 18:26:12.858 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 2 [INFO] Finish cleanup
+2022-05-07 18:26:12.875 o.a.s.d.s.t.SupervisorHealthCheck EventTimer [INFO] Running supervisor healthchecks...
+2022-05-07 18:26:12.875 o.a.s.h.HealthChecker EventTimer [INFO] The supervisor healthchecks succeeded.
+2022-05-07 18:26:42.850 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 1 [INFO] Starting cleanup
+2022-05-07 18:26:42.860 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 1 [INFO] Finish cleanup
+2022-05-07 18:26:42.877 o.a.s.d.s.t.SupervisorHealthCheck EventTimer [INFO] Running supervisor healthchecks...
+2022-05-07 18:26:42.877 o.a.s.h.HealthChecker EventTimer [INFO] The supervisor healthchecks succeeded.
+2022-05-07 18:27:12.850 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 0 [INFO] Starting cleanup
+2022-05-07 18:27:12.860 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 0 [INFO] Finish cleanup
+2022-05-07 18:27:12.877 o.a.s.d.s.t.SupervisorHealthCheck EventTimer [INFO] Running supervisor healthchecks...
+2022-05-07 18:27:12.878 o.a.s.h.HealthChecker EventTimer [INFO] The supervisor healthchecks succeeded.
+2022-05-07 18:27:42.850 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 2 [INFO] Starting cleanup
+2022-05-07 18:27:42.862 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 2 [INFO] Finish cleanup
+2022-05-07 18:27:42.878 o.a.s.d.s.t.SupervisorHealthCheck EventTimer [INFO] Running supervisor healthchecks...
+2022-05-07 18:27:42.879 o.a.s.h.HealthChecker EventTimer [INFO] The supervisor healthchecks succeeded.
+2022-05-07 18:28:12.850 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 1 [INFO] Starting cleanup
+2022-05-07 18:28:12.861 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 1 [INFO] Finish cleanup
+2022-05-07 18:28:12.880 o.a.s.d.s.t.SupervisorHealthCheck EventTimer [INFO] Running supervisor healthchecks...
+2022-05-07 18:28:12.880 o.a.s.h.HealthChecker EventTimer [INFO] The supervisor healthchecks succeeded.
+2022-05-07 18:28:42.850 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 0 [INFO] Starting cleanup
+2022-05-07 18:28:42.861 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 0 [INFO] Finish cleanup
+2022-05-07 18:28:42.880 o.a.s.d.s.t.SupervisorHealthCheck EventTimer [INFO] Running supervisor healthchecks...
+2022-05-07 18:28:42.881 o.a.s.h.HealthChecker EventTimer [INFO] The supervisor healthchecks succeeded.
+2022-05-07 18:29:12.850 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 2 [INFO] Starting cleanup
+2022-05-07 18:29:12.862 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 2 [INFO] Finish cleanup
+2022-05-07 18:29:12.883 o.a.s.d.s.t.SupervisorHealthCheck EventTimer [INFO] Running supervisor healthchecks...
+2022-05-07 18:29:12.883 o.a.s.h.HealthChecker EventTimer [INFO] The supervisor healthchecks succeeded.
+2022-05-07 18:29:42.850 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 1 [INFO] Starting cleanup
+2022-05-07 18:29:42.860 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 1 [INFO] Finish cleanup
+2022-05-07 18:29:42.883 o.a.s.d.s.t.SupervisorHealthCheck EventTimer [INFO] Running supervisor healthchecks...
+2022-05-07 18:29:42.884 o.a.s.h.HealthChecker EventTimer [INFO] The supervisor healthchecks succeeded.
+2022-05-07 18:30:12.850 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 0 [INFO] Starting cleanup
+2022-05-07 18:30:12.858 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 0 [INFO] Finish cleanup
+2022-05-07 18:30:12.884 o.a.s.d.s.t.SupervisorHealthCheck EventTimer [INFO] Running supervisor healthchecks...
+2022-05-07 18:30:12.885 o.a.s.h.HealthChecker EventTimer [INFO] The supervisor healthchecks succeeded.
+2022-05-07 18:30:42.850 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 2 [INFO] Starting cleanup
+2022-05-07 18:30:42.854 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 2 [INFO] Finish cleanup
+2022-05-07 18:30:42.885 o.a.s.d.s.t.SupervisorHealthCheck EventTimer [INFO] Running supervisor healthchecks...
+2022-05-07 18:30:42.885 o.a.s.h.HealthChecker EventTimer [INFO] The supervisor healthchecks succeeded.
+2022-05-07 18:31:12.850 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 1 [INFO] Starting cleanup
+2022-05-07 18:31:12.861 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 1 [INFO] Finish cleanup
+2022-05-07 18:31:12.885 o.a.s.d.s.t.SupervisorHealthCheck EventTimer [INFO] Running supervisor healthchecks...
+2022-05-07 18:31:12.885 o.a.s.h.HealthChecker EventTimer [INFO] The supervisor healthchecks succeeded.
+2022-05-07 18:31:42.850 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 0 [INFO] Starting cleanup
+2022-05-07 18:31:42.863 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 0 [INFO] Finish cleanup
+2022-05-07 18:31:42.886 o.a.s.d.s.t.SupervisorHealthCheck EventTimer [INFO] Running supervisor healthchecks...
+2022-05-07 18:31:42.886 o.a.s.h.HealthChecker EventTimer [INFO] The supervisor healthchecks succeeded.
+2022-05-07 18:32:12.850 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 2 [INFO] Starting cleanup
+2022-05-07 18:32:12.855 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 2 [INFO] Finish cleanup
+2022-05-07 18:32:12.887 o.a.s.d.s.t.SupervisorHealthCheck EventTimer [INFO] Running supervisor healthchecks...
+2022-05-07 18:32:12.888 o.a.s.h.HealthChecker EventTimer [INFO] The supervisor healthchecks succeeded.
+2022-05-07 18:32:42.850 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 1 [INFO] Starting cleanup
+2022-05-07 18:32:42.855 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 1 [INFO] Finish cleanup
+2022-05-07 18:32:42.888 o.a.s.d.s.t.SupervisorHealthCheck EventTimer [INFO] Running supervisor healthchecks...
+2022-05-07 18:32:42.888 o.a.s.h.HealthChecker EventTimer [INFO] The supervisor healthchecks succeeded.
+2022-05-07 18:33:12.850 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 0 [INFO] Starting cleanup
+2022-05-07 18:33:12.860 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 0 [INFO] Finish cleanup
+2022-05-07 18:33:12.888 o.a.s.d.s.t.SupervisorHealthCheck EventTimer [INFO] Running supervisor healthchecks...
+2022-05-07 18:33:12.888 o.a.s.h.HealthChecker EventTimer [INFO] The supervisor healthchecks succeeded.
+2022-05-07 18:33:42.850 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 2 [INFO] Starting cleanup
+2022-05-07 18:33:42.860 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 2 [INFO] Finish cleanup
+2022-05-07 18:33:42.889 o.a.s.d.s.t.SupervisorHealthCheck EventTimer [INFO] Running supervisor healthchecks...
+2022-05-07 18:33:42.889 o.a.s.h.HealthChecker EventTimer [INFO] The supervisor healthchecks succeeded.
+2022-05-07 18:34:12.850 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 1 [INFO] Starting cleanup
+2022-05-07 18:34:12.854 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 1 [INFO] Finish cleanup
+2022-05-07 18:34:12.889 o.a.s.d.s.t.SupervisorHealthCheck EventTimer [INFO] Running supervisor healthchecks...
+2022-05-07 18:34:12.889 o.a.s.h.HealthChecker EventTimer [INFO] The supervisor healthchecks succeeded.
+2022-05-07 18:34:42.850 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 0 [INFO] Starting cleanup
+2022-05-07 18:34:42.857 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 0 [INFO] Finish cleanup
+2022-05-07 18:34:42.890 o.a.s.d.s.t.SupervisorHealthCheck EventTimer [INFO] Running supervisor healthchecks...
+2022-05-07 18:34:42.890 o.a.s.h.HealthChecker EventTimer [INFO] The supervisor healthchecks succeeded.
+2022-05-07 18:35:12.850 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 2 [INFO] Starting cleanup
+2022-05-07 18:35:12.854 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 2 [INFO] Finish cleanup
+2022-05-07 18:35:12.890 o.a.s.d.s.t.SupervisorHealthCheck EventTimer [INFO] Running supervisor healthchecks...
+2022-05-07 18:35:12.890 o.a.s.h.HealthChecker EventTimer [INFO] The supervisor healthchecks succeeded.
+2022-05-07 18:35:42.850 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 1 [INFO] Starting cleanup
+2022-05-07 18:35:42.860 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 1 [INFO] Finish cleanup
+2022-05-07 18:35:42.890 o.a.s.d.s.t.SupervisorHealthCheck EventTimer [INFO] Running supervisor healthchecks...
+2022-05-07 18:35:42.891 o.a.s.h.HealthChecker EventTimer [INFO] The supervisor healthchecks succeeded.
+2022-05-07 18:36:12.850 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 0 [INFO] Starting cleanup
+2022-05-07 18:36:12.857 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 0 [INFO] Finish cleanup
+2022-05-07 18:36:12.891 o.a.s.d.s.t.SupervisorHealthCheck EventTimer [INFO] Running supervisor healthchecks...
+2022-05-07 18:36:12.891 o.a.s.h.HealthChecker EventTimer [INFO] The supervisor healthchecks succeeded.
+2022-05-07 18:36:42.850 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 2 [INFO] Starting cleanup
+2022-05-07 18:36:42.860 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 2 [INFO] Finish cleanup
+2022-05-07 18:36:42.892 o.a.s.d.s.t.SupervisorHealthCheck EventTimer [INFO] Running supervisor healthchecks...
+2022-05-07 18:36:42.893 o.a.s.h.HealthChecker EventTimer [INFO] The supervisor healthchecks succeeded.
+2022-05-07 18:37:12.850 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 1 [INFO] Starting cleanup
+2022-05-07 18:37:12.859 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 1 [INFO] Finish cleanup
+2022-05-07 18:37:12.893 o.a.s.d.s.t.SupervisorHealthCheck EventTimer [INFO] Running supervisor healthchecks...
+2022-05-07 18:37:12.894 o.a.s.h.HealthChecker EventTimer [INFO] The supervisor healthchecks succeeded.
+2022-05-07 18:37:42.850 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 0 [INFO] Starting cleanup
+2022-05-07 18:37:42.859 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 0 [INFO] Finish cleanup
+2022-05-07 18:37:42.894 o.a.s.d.s.t.SupervisorHealthCheck EventTimer [INFO] Running supervisor healthchecks...
+2022-05-07 18:37:42.894 o.a.s.h.HealthChecker EventTimer [INFO] The supervisor healthchecks succeeded.
+2022-05-07 18:38:12.850 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 2 [INFO] Starting cleanup
+2022-05-07 18:38:12.861 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 2 [INFO] Finish cleanup
+2022-05-07 18:38:12.895 o.a.s.d.s.t.SupervisorHealthCheck EventTimer [INFO] Running supervisor healthchecks...
+2022-05-07 18:38:12.896 o.a.s.h.HealthChecker EventTimer [INFO] The supervisor healthchecks succeeded.
+2022-05-07 18:38:42.850 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 1 [INFO] Starting cleanup
+2022-05-07 18:38:42.854 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 1 [INFO] Finish cleanup
+2022-05-07 18:38:42.896 o.a.s.d.s.t.SupervisorHealthCheck EventTimer [INFO] Running supervisor healthchecks...
+2022-05-07 18:38:42.896 o.a.s.h.HealthChecker EventTimer [INFO] The supervisor healthchecks succeeded.
+2022-05-07 18:39:12.850 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 0 [INFO] Starting cleanup
+2022-05-07 18:39:12.864 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 0 [INFO] Finish cleanup
+2022-05-07 18:39:12.896 o.a.s.d.s.t.SupervisorHealthCheck EventTimer [INFO] Running supervisor healthchecks...
+2022-05-07 18:39:12.897 o.a.s.h.HealthChecker EventTimer [INFO] The supervisor healthchecks succeeded.
+2022-05-07 18:39:42.850 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 2 [INFO] Starting cleanup
+2022-05-07 18:39:42.864 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 2 [INFO] Finish cleanup
+2022-05-07 18:39:42.897 o.a.s.d.s.t.SupervisorHealthCheck EventTimer [INFO] Running supervisor healthchecks...
+2022-05-07 18:39:42.897 o.a.s.h.HealthChecker EventTimer [INFO] The supervisor healthchecks succeeded.
+2022-05-07 18:40:12.850 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 1 [INFO] Starting cleanup
+2022-05-07 18:40:12.864 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 1 [INFO] Finish cleanup
+2022-05-07 18:40:12.897 o.a.s.d.s.t.SupervisorHealthCheck EventTimer [INFO] Running supervisor healthchecks...
+2022-05-07 18:40:12.898 o.a.s.h.HealthChecker EventTimer [INFO] The supervisor healthchecks succeeded.
+2022-05-07 18:40:42.850 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 0 [INFO] Starting cleanup
+2022-05-07 18:40:42.863 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 0 [INFO] Finish cleanup
+2022-05-07 18:40:42.898 o.a.s.d.s.t.SupervisorHealthCheck EventTimer [INFO] Running supervisor healthchecks...
+2022-05-07 18:40:42.899 o.a.s.h.HealthChecker EventTimer [INFO] The supervisor healthchecks succeeded.
+2022-05-07 18:41:12.850 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 2 [INFO] Starting cleanup
+2022-05-07 18:41:12.863 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 2 [INFO] Finish cleanup
+2022-05-07 18:41:12.899 o.a.s.d.s.t.SupervisorHealthCheck EventTimer [INFO] Running supervisor healthchecks...
+2022-05-07 18:41:12.900 o.a.s.h.HealthChecker EventTimer [INFO] The supervisor healthchecks succeeded.
+2022-05-07 18:41:42.850 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 1 [INFO] Starting cleanup
+2022-05-07 18:41:42.864 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 1 [INFO] Finish cleanup
+2022-05-07 18:41:42.900 o.a.s.d.s.t.SupervisorHealthCheck EventTimer [INFO] Running supervisor healthchecks...
+2022-05-07 18:41:42.901 o.a.s.h.HealthChecker EventTimer [INFO] The supervisor healthchecks succeeded.
+2022-05-07 18:42:12.850 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 0 [INFO] Starting cleanup
+2022-05-07 18:42:12.864 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 0 [INFO] Finish cleanup
+2022-05-07 18:42:12.902 o.a.s.d.s.t.SupervisorHealthCheck EventTimer [INFO] Running supervisor healthchecks...
+2022-05-07 18:42:12.902 o.a.s.h.HealthChecker EventTimer [INFO] The supervisor healthchecks succeeded.
+2022-05-07 18:42:42.850 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 2 [INFO] Starting cleanup
+2022-05-07 18:42:42.864 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 2 [INFO] Finish cleanup
+2022-05-07 18:42:42.902 o.a.s.d.s.t.SupervisorHealthCheck EventTimer [INFO] Running supervisor healthchecks...
+2022-05-07 18:42:42.902 o.a.s.h.HealthChecker EventTimer [INFO] The supervisor healthchecks succeeded.
+2022-05-07 18:43:12.850 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 1 [INFO] Starting cleanup
+2022-05-07 18:43:12.854 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 1 [INFO] Finish cleanup
+2022-05-07 18:43:12.903 o.a.s.d.s.t.SupervisorHealthCheck EventTimer [INFO] Running supervisor healthchecks...
+2022-05-07 18:43:12.904 o.a.s.h.HealthChecker EventTimer [INFO] The supervisor healthchecks succeeded.
+2022-05-07 18:43:42.850 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 0 [INFO] Starting cleanup
+2022-05-07 18:43:42.855 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 0 [INFO] Finish cleanup
+2022-05-07 18:43:42.904 o.a.s.d.s.t.SupervisorHealthCheck EventTimer [INFO] Running supervisor healthchecks...
+2022-05-07 18:43:42.905 o.a.s.h.HealthChecker EventTimer [INFO] The supervisor healthchecks succeeded.
+2022-05-07 18:44:12.850 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 2 [INFO] Starting cleanup
+2022-05-07 18:44:12.864 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 2 [INFO] Finish cleanup
+2022-05-07 18:44:12.905 o.a.s.d.s.t.SupervisorHealthCheck EventTimer [INFO] Running supervisor healthchecks...
+2022-05-07 18:44:12.906 o.a.s.h.HealthChecker EventTimer [INFO] The supervisor healthchecks succeeded.
+2022-05-07 18:44:42.850 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 1 [INFO] Starting cleanup
+2022-05-07 18:44:42.858 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 1 [INFO] Finish cleanup
+2022-05-07 18:44:42.906 o.a.s.d.s.t.SupervisorHealthCheck EventTimer [INFO] Running supervisor healthchecks...
+2022-05-07 18:44:42.907 o.a.s.h.HealthChecker EventTimer [INFO] The supervisor healthchecks succeeded.
+2022-05-07 18:45:12.850 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 0 [INFO] Starting cleanup
+2022-05-07 18:45:12.864 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 0 [INFO] Finish cleanup
+2022-05-07 18:45:12.907 o.a.s.d.s.t.SupervisorHealthCheck EventTimer [INFO] Running supervisor healthchecks...
+2022-05-07 18:45:12.908 o.a.s.h.HealthChecker EventTimer [INFO] The supervisor healthchecks succeeded.
+2022-05-07 18:45:42.850 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 2 [INFO] Starting cleanup
+2022-05-07 18:45:42.863 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 2 [INFO] Finish cleanup
+2022-05-07 18:45:42.909 o.a.s.d.s.t.SupervisorHealthCheck EventTimer [INFO] Running supervisor healthchecks...
+2022-05-07 18:45:42.909 o.a.s.h.HealthChecker EventTimer [INFO] The supervisor healthchecks succeeded.
+2022-05-07 18:46:12.850 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 1 [INFO] Starting cleanup
+2022-05-07 18:46:12.862 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 1 [INFO] Finish cleanup
+2022-05-07 18:46:12.909 o.a.s.d.s.t.SupervisorHealthCheck EventTimer [INFO] Running supervisor healthchecks...
+2022-05-07 18:46:12.910 o.a.s.h.HealthChecker EventTimer [INFO] The supervisor healthchecks succeeded.
+2022-05-07 18:46:42.850 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 0 [INFO] Starting cleanup
+2022-05-07 18:46:42.863 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 0 [INFO] Finish cleanup
+2022-05-07 18:46:42.911 o.a.s.d.s.t.SupervisorHealthCheck EventTimer [INFO] Running supervisor healthchecks...
+2022-05-07 18:46:42.911 o.a.s.h.HealthChecker EventTimer [INFO] The supervisor healthchecks succeeded.
+2022-05-07 18:47:12.850 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 2 [INFO] Starting cleanup
+2022-05-07 18:47:12.864 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 2 [INFO] Finish cleanup
+2022-05-07 18:47:12.911 o.a.s.d.s.t.SupervisorHealthCheck EventTimer [INFO] Running supervisor healthchecks...
+2022-05-07 18:47:12.912 o.a.s.h.HealthChecker EventTimer [INFO] The supervisor healthchecks succeeded.
+2022-05-07 18:47:42.850 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 1 [INFO] Starting cleanup
+2022-05-07 18:47:42.854 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 1 [INFO] Finish cleanup
+2022-05-07 18:47:42.913 o.a.s.d.s.t.SupervisorHealthCheck EventTimer [INFO] Running supervisor healthchecks...
+2022-05-07 18:47:42.913 o.a.s.h.HealthChecker EventTimer [INFO] The supervisor healthchecks succeeded.
+2022-05-07 18:48:12.850 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 0 [INFO] Starting cleanup
+2022-05-07 18:48:12.854 o.a.s.l.AsyncLocalizer AsyncLocalizer Task Executor - 0 [INFO] Finish cleanup
+2022-05-07 18:48:12.913 o.a.s.d.s.t.SupervisorHealthCheck EventTimer [INFO] Running supervisor healthchecks...
+2022-05-07 18:48:12.913 o.a.s.h.HealthChecker EventTimer [INFO] The supervisor healthchecks succeeded.
