@@ -45,7 +45,7 @@ services:
     storm-delpoy-topology:
         image: storm:2.2.0
         container_name: storm-delpoy-topology
-        command: /topology-deployment-scripts/deploy-topology.sh
+        command: bash -c "while true; do sleep 1; done"
         depends_on:
             - nimbus
         links:
